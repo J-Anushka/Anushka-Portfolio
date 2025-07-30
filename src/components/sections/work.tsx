@@ -93,9 +93,9 @@ export default function Work() {
 
           {TABS_CONFIG.map(tab => (
               <TabsContent key={tab.value} value={tab.value}>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
                     {(projects[tab.value as keyof typeof projects] || []).map((project, index) => (
-                        <Card key={index} className="overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+                        <Card key={index} className="overflow-hidden group neon-border bg-card">
                             <CardHeader className="p-0">
                                 <div className="aspect-video overflow-hidden">
                                 <Image
