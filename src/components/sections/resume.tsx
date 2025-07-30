@@ -24,9 +24,9 @@ export default function Resume() {
           {skills.map((skill, index) => (
             <Card
               key={index}
-              className="text-center p-6 flex flex-col items-center justify-center group bg-card transition-all duration-300 cursor-pointer neon-border"
+              className="text-center p-6 flex flex-col items-center justify-center group bg-card transition-all duration-300 cursor-pointer hover:bg-accent"
             >
-              <div className="text-primary mb-4 transition-transform duration-300 group-hover:scale-125 group-hover:glow-shadow-primary">
+              <div className="text-primary mb-4 transition-transform duration-300 group-hover:scale-110">
                 {skill.icon}
               </div>
               <CardTitle className="font-headline text-lg">{skill.title}</CardTitle>

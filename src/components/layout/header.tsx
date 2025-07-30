@@ -13,10 +13,10 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b border-border/50">
+    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm border-b">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="#" className="flex items-center gap-2 group" prefetch={false}>
-          <Orbit className="h-7 w-7 text-primary transition-transform duration-300 group-hover:rotate-45 glow-shadow-primary" />
+          <Orbit className="h-7 w-7 text-primary transition-transform duration-300 group-hover:rotate-45" />
           <span className="font-headline text-xl font-bold">Anushkaverse</span>
         </Link>
         <nav className="hidden items-center gap-1 text-sm font-medium md:flex">

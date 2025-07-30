@@ -56,20 +56,10 @@ export default function Hero() {
   return (
     <section id="home" className="relative h-screen w-full flex flex-col items-center justify-center p-0 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <Image
-          src="https://placehold.co/1920x1080.png"
-          alt="Background"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-20"
-          data-ai-hint="tech cityscape sunset"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+        <div className="absolute inset-0 bg-background" />
       </div>
-       <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
-
-      <div className="relative z-20 text-center px-4 animate-subtle-float">
-        <h1 className="font-headline text-4xl font-bold tracking-tighter text-foreground sm:text-6xl md:text-7xl lg:text-8xl glow-shadow-accent">
+      <div className="relative z-20 text-center px-4">
+        <h1 className="font-headline text-4xl font-bold tracking-tighter text-foreground sm:text-6xl md:text-7xl lg:text-8xl">
           Welcome to Anushka's Universe
         </h1>
         <p className="mt-6 font-headline text-lg text-foreground/80 md:text-2xl min-h-[3rem]">
@@ -79,7 +69,7 @@ export default function Hero() {
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
         <a href="#about" aria-label="Scroll to about section">
-          <ChevronDown className="h-8 w-8 text-primary glow-shadow-primary" />
+          <ChevronDown className="h-8 w-8 text-primary" />
         </a>
       </div>
     </section>

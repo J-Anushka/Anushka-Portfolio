@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Space Grotesk', 'sans-serif'],
-        headline: ['Syne', 'sans-serif'],
+        sans: ['var(--font-inter)', 'sans-serif'],
+        headline: ['var(--font-inter)', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
@@ -71,29 +71,10 @@ export default {
             height: '0',
           },
         },
-        rotateGradient: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        },
-        'subtle-float': {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-8px)' },
-        },
-        'neon-pulse': {
-          '0%, 100%': {
-            boxShadow: '0 0 2px hsl(var(--primary)), 0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary) / 0.8)',
-          },
-          '50%': {
-             boxShadow: '0 0 5px hsl(var(--accent)), 0 0 10px hsl(var(--accent)), 0 0 20px hsl(var(--accent) / 0.8)',
-          },
-        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'rotate-gradient': 'rotateGradient 4s linear infinite',
-        'subtle-float': 'subtle-float 4s ease-in-out infinite',
-        'neon-pulse': 'neon-pulse 3s ease-in-out infinite',
       },
     },
   },

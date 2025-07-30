@@ -95,7 +95,7 @@ export default function Work() {
               <TabsContent key={tab.value} value={tab.value}>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
                     {(projects[tab.value as keyof typeof projects] || []).map((project, index) => (
-                        <Card key={index} className="overflow-hidden group neon-border bg-card">
+                        <Card key={index} className="overflow-hidden group bg-card hover:bg-accent">
                             <CardHeader className="p-0">
                                 <div className="aspect-video overflow-hidden">
                                 <Image
