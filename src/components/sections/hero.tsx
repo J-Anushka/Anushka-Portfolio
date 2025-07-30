@@ -19,7 +19,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
               <Button asChild size="lg" className="font-semibold">
-                <Link href="/journey">View My Journey</Link>
+                <Link href="/home#work">View My Work</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="font-semibold">
                 <Link href="/home#contact">Contact Me</Link>
