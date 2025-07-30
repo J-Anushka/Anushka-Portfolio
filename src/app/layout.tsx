@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${syne.variable} ${quintessential.variable} !scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} ${syne.variable} ${quintessential.variable} !scroll-smooth dark`}>
       <body className="font-sans antialiased bg-background">
         {children}
         <Toaster />
