@@ -9,8 +9,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative w-full h-screen min-h-[700px] flex items-center justify-center bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="flex flex-col gap-4 items-start">
+        <div className="flex flex-col gap-4 items-center text-center">
             <div className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
               Game Developer & Designer
             </div>
@@ -28,16 +27,6 @@ export default function Hero() {
                 <Link href="/home#contact">Contact Me</Link>
               </Button>
             </div>
-          </div>
-          <div className="relative w-full aspect-square max-w-md mx-auto">
-             <Image
-                src="https://placehold.co/600x600.png"
-                alt="Hero image"
-                fill
-                className="object-cover rounded-2xl shadow-2xl"
-                data-ai-hint="futuristic avatar"
-              />
-          </div>
         </div>
       </div>
     </section>
