@@ -4,7 +4,6 @@ import Hero from "@/components/sections/hero";
 import Work from "@/components/sections/work";
 import About from "@/components/sections/about";
 import Resume from "@/components/sections/resume";
-import Chatbot from "@/components/chatbot";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
         <About />
       </main>
       <Footer />
-      <Chatbot />
     </div>
   );
 }
