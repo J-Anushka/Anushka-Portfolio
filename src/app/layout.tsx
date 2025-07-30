@@ -1,11 +1,11 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
-import { Inter, JetBrains_Mono } from 'next/font/google'
+import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 
-const inter = Inter({ 
+const spaceGrotesk = Space_Grotesk({ 
   subsets: ['latin'], 
-  variable: '--font-inter' 
+  variable: '--font-space-grotesk' 
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} !scroll-smooth dark`}>
+    <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} !scroll-smooth dark`}>
       <body className="font-sans antialiased">
         {children}
         <Toaster />
