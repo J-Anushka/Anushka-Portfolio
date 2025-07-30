@@ -12,11 +12,11 @@ export default function OpeningPage() {
   useEffect(() => {
     const fadeTimeout = setTimeout(() => {
       setIsFading(true);
-    }, 4000);
+    }, 7000);
 
     const redirectTimeout = setTimeout(() => {
       router.push('/home');
-    }, 5000); 
+    }, 8000); 
 
     return () => {
       clearTimeout(fadeTimeout);
