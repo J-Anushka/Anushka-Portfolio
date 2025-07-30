@@ -25,7 +25,29 @@ const timelineData = [
   {
     year: "2023",
     title: "Building the Foundation",
-    description: "Co-founded a startup, learning the ins and outs of building a business from the ground up.",
+    description: (
+      <>
+        From winning the{' '}
+        <Link
+          href="https://www.linkedin.com/posts/anushkajaiswal1_first-hackathon-global-nominee-an-unexpected-activity-7117901669132120064-pf5P?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD9yF5sBiwZPChl0LVJX9sj86SYfOuDErFQ"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-primary hover:underline"
+        >
+          NASA Space Apps Challenge (National Winner, Global Nominee)
+        </Link>{' '}
+        to joining{' '}
+        <Link
+          href="https://innovixcorp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-primary hover:underline"
+        >
+          Innovix
+        </Link>
+        , 2023 was the year I launched into the startup world.
+      </>
+    ),
     align: "right",
   },
   {
