@@ -13,6 +13,7 @@ export default {
         sans: ['var(--font-inter)', 'sans-serif'],
         headline: ['var(--font-inter)', 'sans-serif'],
         code: ['var(--font-inter)', 'monospace'],
+        quintessential: ['var(--font-quintessential)', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -71,10 +72,21 @@ export default {
             height: '0',
           },
         },
+        'fade-in-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(20px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
       },
     },
   },
