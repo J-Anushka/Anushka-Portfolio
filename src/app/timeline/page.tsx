@@ -35,7 +35,7 @@ const timelineData = [
   {
     year: "2021",
     title: "The Journey Begins",
-    description: "Started my engineering journey, diving deep into the world of technology and creative problem-solving.",
+    description: "Turned the mind-bending concept of Quantum Teleportation into a 2-minute video for the Breakthrough Junior Challenge 2021.",
     align: "right",
   },
 ];
