@@ -32,7 +32,7 @@ const timelineData = [
           href="https://www.linkedin.com/posts/anushkajaiswal1_first-hackathon-global-nominee-an-unexpected-activity-7117901669132120064-pf5P?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD9yF5sBiwZPChl0LVJX9sj86SYfOuDErFQ"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold text-primary hover:underline"
+          className="font-semibold text-ring hover:underline"
         >
           NASA Space Apps Challenge (National Winner, Global Nominee)
         </Link>{' '}
