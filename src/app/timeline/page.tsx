@@ -40,9 +40,9 @@ const timelineData = [
         Turned the mind-bending concept of Quantum Teleportation into a 2-minute
         video for the{' '}
         <span className="font-semibold text-primary">
-          Breakthrough Junior Challenge
-        </span>{' '}
-        2021.
+          Breakthrough Junior Challenge 2021
+        </span>
+        .
       </>
     ),
     align: "right",
