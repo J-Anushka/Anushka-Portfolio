@@ -33,10 +33,10 @@ export default function OpeningPage() {
     >
       <div className="text-center max-w-3xl mx-auto px-4">
         <h1 className="font-quintessential text-4xl md:text-5xl lg:text-6xl text-primary mb-8 animate-fade-in-up">
-          No map. No manual. Just raw instinct, clear vision, and a fire that never fades.
+          Namaste 🙏 I’m Anushka Jaiswal!
         </h1>
         <p className="text-muted-foreground text-lg md:text-xl italic animate-fade-in-up animation-delay-500">
-          Welcome to the mind behind the madness and let me tell you that this is more than a portfolio. It’s a glimpse into everything I build when no one’s watching.
+          Call me curious, call me chaotic but I just love trying everything! Life’s my playground, and I’m here to swing, slide, and maybe even invent a few new rides along the way.
         </p>
       </div>
     </div>
