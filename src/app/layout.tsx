@@ -1,16 +1,16 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
-import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
+import { Inter, Fira_Code } from 'next/font/google'
 
-const spaceGrotesk = Space_Grotesk({ 
+const inter = Inter({ 
   subsets: ['latin'], 
-  variable: '--font-space-grotesk' 
+  variable: '--font-inter' 
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const firaCode = Fira_Code({
   subsets: ['latin'],
-  variable: '--font-jetbrains-mono'
+  variable: '--font-fira-code'
 })
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} !scroll-smooth dark`}>
+    <html lang="en" className={`${inter.variable} ${firaCode.variable} !scroll-smooth dark`}>
       <body className="font-sans antialiased">
         {children}
         <Toaster />
