@@ -1,6 +1,7 @@
 
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
+import Link from "next/link";
 
 const timelineData = [
   {
@@ -34,7 +35,15 @@ const timelineData = [
       <>
         Started my engineering journey and stepped up as{' '}
         <span className="font-semibold text-ring">Class Representative</span>{' '}
-        where leadership found its first stage.
+        where leadership found its first stage.{' '}
+        <Link
+          href="https://drive.google.com/file/d/1kYd4R4lezn_yaw6Aff4DA88D3vZ1jMzG/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:underline font-semibold"
+        >
+          View a Glimpse
+        </Link>
       </>
     ),
     align: "left",
