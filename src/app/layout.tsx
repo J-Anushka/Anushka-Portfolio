@@ -1,13 +1,17 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
-import { Poppins } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 
-const poppins = Poppins({ 
+const inter = Inter({ 
   subsets: ['latin'], 
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-poppins' 
+  variable: '--font-inter' 
 });
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains-mono'
+})
 
 export const metadata: Metadata = {
   title: 'Anushkaverse',
@@ -20,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} !scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} !scroll-smooth dark`}>
       <body className="font-sans antialiased">
         {children}
         <Toaster />
