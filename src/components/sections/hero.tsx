@@ -1,75 +1,51 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowDown } from "lucide-react";
 import Image from "next/image";
-
-const phrases = [
-  "I Build Games",
-  "I Design Worlds",
-  "I Lead Dreamers",
-  "I Win NASA Challenges",
-  "I Cook. I Dance. I Dream Bigger.",
-];
+import Link from "next/link";
 
 export default function Hero() {
-  const [index, setIndex] = useState(0);
-  const [subIndex, setSubIndex] = useState(0);
-  const [blink, setBlink] = useState(true);
-  const [reverse, setReverse] = useState(false);
-
-  useEffect(() => {
-    if (index === phrases.length) {
-      setIndex(0); // Loop back to the start
-      return;
-    }
-
-    if (subIndex === phrases[index].length + 1 && !reverse) {
-      setReverse(true);
-      // Pause at the end of the phrase
-      setTimeout(() => {
-        // Start deleting
-      }, 1500); 
-      return;
-    }
-
-    if (subIndex === 0 && reverse) {
-      setReverse(false);
-      setIndex((prev) => (prev + 1) % phrases.length);
-      return;
-    }
-
-    const timeout = setTimeout(() => {
-      setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, Math.max(reverse ? 75 : subIndex === phrases[index].length ? 1000 : 150, Math.random() * 350));
-
-    return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse]);
-
-  useEffect(() => {
-    const timeout2 = setTimeout(() => {
-      setBlink((prev) => !prev);
-    }, 500);
-    return () => clearTimeout(timeout2);
-  }, [blink]);
-
   return (
-    <section id="home" className="relative h-screen w-full flex flex-col items-center justify-center p-0 overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-background" />
+    <section id="home" className="relative w-full h-screen min-h-[700px] flex items-center justify-center bg-background">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 text-center md:text-left">
+            <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-foreground">
+              Anushka
+              <br />
+              <span className="text-primary">Game Developer & Designer</span>
+            </h1>
+            <p className="max-w-[600px] mx-auto md:mx-0 text-muted-foreground md:text-xl/relaxed">
+              I build immersive digital worlds and bring creative ideas to life through code and design.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <Button asChild size="lg" className="font-semibold">
+                <Link href="#work">View My Work</Link>
+              </Button>
+               <Button asChild variant="outline" size="lg" className="font-semibold">
+                <Link href="#contact">Get In Touch</Link>
+              </Button>
+            </div>
+          </div>
+          <div className="relative h-[400px] md:h-[500px] lg:h-[600px] w-full flex items-center justify-center">
+             <div className="aspect-square rounded-full overflow-hidden w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] mx-auto shadow-2xl border-8 border-card">
+                 <Image
+                    src="https://placehold.co/600x600.png"
+                    alt="Anushka's Portrait"
+                    width={600}
+                    height={600}
+                    className="object-cover w-full h-full"
+                    data-ai-hint="futuristic avatar"
+                    priority
+                />
+             </div>
+          </div>
+        </div>
       </div>
-      <div className="relative z-20 text-center px-4">
-        <h1 className="font-headline text-4xl font-bold tracking-tighter text-foreground sm:text-6xl md:text-7xl lg:text-8xl">
-          Welcome to Anushka's Universe
-        </h1>
-        <p className="mt-6 font-headline text-lg text-foreground/80 md:text-2xl min-h-[3rem]">
-          {`${phrases[index].substring(0, subIndex)}`}
-          <span className={`transition-opacity duration-300 text-primary ${blink ? "opacity-100" : "opacity-0"}`}>|</span>
-        </p>
-      </div>
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
         <a href="#about" aria-label="Scroll to about section">
-          <ChevronDown className="h-8 w-8 text-primary" />
+          <ArrowDown className="h-8 w-8 text-muted-foreground animate-bounce" />
         </a>
       </div>
     </section>
