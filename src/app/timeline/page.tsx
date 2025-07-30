@@ -1,3 +1,4 @@
+
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 
@@ -28,7 +29,7 @@ const timelineData = [
   },
   {
     year: "2022",
-    title: "chapter one",
+    title: "Chapter One",
     description: (
       <>
         Started my engineering journey and stepped up as{' '}
