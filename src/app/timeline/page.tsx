@@ -35,12 +35,29 @@ const timelineData = [
   {
     year: "2021",
     title: "The Journey Begins",
-    description: "Turned the mind-bending concept of Quantum Teleportation into a 2-minute video for the Breakthrough Junior Challenge 2021.",
+    description: (
+      <>
+        Turned the mind-bending concept of Quantum Teleportation into a 2-minute
+        video for the{' '}
+        <span className="font-semibold text-primary">
+          Breakthrough Junior Challenge
+        </span>{' '}
+        2021.
+      </>
+    ),
     align: "right",
   },
 ];
 
-const TimelineItem = ({ year, title, description, align }: (typeof timelineData)[0]) => {
+type TimelineItemProps = {
+  year: string;
+  title: string;
+  description: React.ReactNode;
+  align: "left" | "right";
+};
+
+
+const TimelineItem = ({ year, title, description, align }: TimelineItemProps) => {
   const alignmentClass = align === 'left' ? 'md:self-start md:text-left' : 'md:self-end md:text-right';
   const textAlignClass = align === 'left' ? 'md:text-left' : 'md:text-right';
   const lineClass = align === 'left' ? 'md:left-0' : 'md:right-0';
