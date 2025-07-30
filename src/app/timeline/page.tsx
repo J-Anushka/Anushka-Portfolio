@@ -28,8 +28,14 @@ const timelineData = [
   },
   {
     year: "2022",
-    title: "Leadership & Community",
-    description: "As E-Cell President, I had the privilege of fostering a community of innovators and entrepreneurs.",
+    title: "chapter one",
+    description: (
+      <>
+        Started my engineering journey and stepped up as{' '}
+        <span className="font-semibold text-ring">Class Representative</span>{' '}
+        where leadership found its first stage.
+      </>
+    ),
     align: "left",
   },
   {
