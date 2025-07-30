@@ -11,7 +11,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
-        headline: ['var(--font-inter)', 'sans-serif'],
+        headline: ['var(--font-syne)', 'sans-serif'],
         code: ['var(--font-inter)', 'monospace'],
         quintessential: ['var(--font-quintessential)', 'sans-serif'],
       },
