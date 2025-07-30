@@ -37,8 +37,9 @@ const timelineData = [
     title: "The Journey Begins",
     description: (
       <>
-        Turned the mind-bending concept of Quantum Teleportation into a 2-minute
-        video for the{' '}
+        Turned the mind-bending concept of{' '}
+        <span className="font-semibold text-accent">Quantum Teleportation</span>{' '}
+        into a 2-minute video for the{' '}
         <span className="font-semibold text-primary">
           Breakthrough Junior Challenge 2021
         </span>
