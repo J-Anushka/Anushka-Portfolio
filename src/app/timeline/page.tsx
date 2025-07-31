@@ -12,8 +12,8 @@ const timelineData = [
   },
   {
     year: "2025",
-    title: "Expanding the Vision",
-    description: "New projects, new collaborations, and pushing the boundaries of what's possible.",
+    title: "Beta Testing the Future",
+    description: "This year is all about diving deep into the AI world, experimenting with dynamic content creation, building interactive digital experiences, and crafting websites like this one.",
      align: "right",
   },
   {
