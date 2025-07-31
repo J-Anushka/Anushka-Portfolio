@@ -48,6 +48,12 @@ const projectEntries = [
     image: "https://placehold.co/600x400.png",
     hint: "conference diplomacy",
   },
+  {
+    title: "Been the Anchor",
+    description: "Anchored a flagship event organized by our Entrepreneurship Club, setting the tone, engaging the audience, and ensuring the energy stayed high throughout the program.",
+    image: "https://placehold.co/600x400.png",
+    hint: "public speaking event",
+  },
 ];
 
 export default function About() {
