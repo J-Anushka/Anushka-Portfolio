@@ -31,8 +31,8 @@ const projectEntries = [
     hint: "hackathon space",
   },
   {
-    title: "Late Night Coding Sessions",
-    description: "Building a startup means burning the midnight oil. A look behind the scenes of our development process.",
+    title: "Built My Own Voice Assistant",
+    description: "Created my first live project, a voice assistant named Nexa, who still lives in my laptop and responds like a true sidekick.",
     image: "https://images.unsplash.com/photo-1605648916319-cf082f7524a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8dm9pY2UlMjBhc3Npc3RhbnR8ZW58MHx8fHwxNzUzOTc3OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "late night coding",
   },
