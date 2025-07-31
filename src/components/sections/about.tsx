@@ -74,24 +74,26 @@ export default function About() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {projectEntries.map((entry, index) => (
-            <Card key={index} className="overflow-hidden group hover:shadow-xl transition-shadow duration-300">
-              <CardHeader className="p-0">
-                <div className="aspect-video overflow-hidden">
-                  <Image
-                    src={entry.image}
-                    alt={entry.title}
-                    width={600}
-                    height={400}
-                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
-                    data-ai-hint={entry.hint}
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="font-headline text-xl">{entry.title}</CardTitle>
-                <CardDescription className="mt-2">{entry.description}</CardDescription>
-              </CardContent>
-            </Card>
+            <div key={index} className="group rounded-lg p-px bg-transparent hover:bg-gradient-to-r from-accent via-primary to-ring transition-all duration-300">
+              <Card className="overflow-hidden h-full">
+                <CardHeader className="p-0">
+                  <div className="aspect-video overflow-hidden">
+                    <Image
+                      src={entry.image}
+                      alt={entry.title}
+                      width={600}
+                      height={400}
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+                      data-ai-hint={entry.hint}
+                    />
+                  </div>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <CardTitle className="font-headline text-xl">{entry.title}</CardTitle>
+                  <CardDescription className="mt-2">{entry.description}</CardDescription>
+                </CardContent>
+              </Card>
+            </div>
           ))}
         </div>
       </div>
