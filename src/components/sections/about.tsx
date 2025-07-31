@@ -54,6 +54,12 @@ const projectEntries = [
     image: "https://placehold.co/600x400.png",
     hint: "public speaking event",
   },
+  {
+    title: "Hosted Podcasts ",
+    description: "Engaged in insightful conversations with startup founders and distinguished university alumni, uncovering their journeys, lessons, and perspectives to inspire the next generation.",
+    image: "https://placehold.co/600x400.png",
+    hint: "podcast interview",
+  },
 ];
 
 export default function About() {
