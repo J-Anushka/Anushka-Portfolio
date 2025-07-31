@@ -44,7 +44,7 @@ const projectEntries = [
   },
   {
     title: "Served as UNCTAD Committee Chair",
-    description: "Served as the Chairperson for the UNCTAD committee during University’s official MUN, where I moderated discussions on global trade, ensured procedural accuracy, and mentored delegates in diplomatic engagement.",
+    description: "Served as the Chairperson for the UNCTAD committee during University’s MUN, where I moderated discussions on global trade, ensured procedural accuracy, and mentored delegates in diplomatic engagement.",
     image: "https://placehold.co/600x400.png",
     hint: "conference diplomacy",
   },
