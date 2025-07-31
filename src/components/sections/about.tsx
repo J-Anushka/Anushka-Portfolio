@@ -51,7 +51,7 @@ const projectEntries = [
   {
     title: "Been the Anchor",
     description: "Anchored a flagship event organized by our Entrepreneurship Club, setting the tone, engaging the audience, and ensuring the energy stayed high throughout the program.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1682258370582-377d685156bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxldmVudCUyMG1pY3xlbnwwfHx8fDE3NTM5ODE2NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "public speaking event",
   },
   {
