@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { ArrowDown } from 'lucide-react';
+import BackgroundBits from '@/components/layout/background-bits';
 
 export default function OpeningPage() {
   const [isFading, setIsFading] = useState(false);
@@ -29,11 +30,12 @@ export default function OpeningPage() {
   return (
     <div
       className={cn(
-        'flex h-screen w-full flex-col items-center justify-center bg-background transition-opacity duration-1000 ease-in-out',
+        'flex h-screen w-full flex-col items-center justify-center bg-background transition-opacity duration-1000 ease-in-out relative',
         isFading ? 'opacity-0' : 'opacity-100'
       )}
     >
-      <div className="flex flex-grow items-center justify-center">
+      <BackgroundBits />
+      <div className="relative z-10 flex flex-grow items-center justify-center">
         <div className="text-center max-w-3xl mx-auto px-4">
           <h1 className="font-quintessential text-4xl md:text-5xl lg:text-6xl text-primary mb-8 animate-fade-in-up">
             No map. No manual. Just raw instinct, clear vision, and a fire that never fades.
@@ -43,7 +45,7 @@ export default function OpeningPage() {
           </p>
         </div>
       </div>
-      <div className="pb-12">
+      <div className="relative z-10 pb-12">
         <Link href="/home" aria-label="Go to main content">
           <ArrowDown className="h-8 w-8 text-foreground/50 animate-bounce" />
         </Link>
