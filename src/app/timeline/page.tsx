@@ -22,9 +22,14 @@ const timelineData = [
     description: (
       <>
         Established the{' '}
-        <span className="font-semibold text-primary">
+        <Link
+          href="https://www.instagram.com/cuec_official/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-primary hover:underline"
+        >
           Chandigarh University Entrepreneurship Club
-        </span>{' '}
+        </Link>{' '}
         with a mission to ignite entrepreneurial spirit, foster innovation, and
         empower students to turn bold ideas into real ventures.
       </>
@@ -87,7 +92,7 @@ const timelineData = [
     description: (
       <>
         Turned the mind-bending concept of{' '}
-        <span className="font-semibold text-ring">Quantum Teleportation</span> into a
+        <span className="font-semibold text-accent">Quantum Teleportation</span> into a
         2-minute video for the{' '}
         <span className="font-semibold text-primary">
           Breakthrough Junior Challenge 2021
