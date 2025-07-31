@@ -92,7 +92,7 @@ const timelineData = [
     description: (
       <>
         Turned the mind-bending concept of{' '}
-        <span className="font-semibold text-accent">Quantum Teleportation</span> into a
+        <span className="font-semibold text-ring">Quantum Teleportation</span> into a
         2-minute video for the{' '}
         <span className="font-semibold text-primary">
           Breakthrough Junior Challenge 2021
