@@ -3,7 +3,7 @@ import { Code, Gamepad2, BrainCircuit, Mic, Paintbrush, Users } from "lucide-rea
 
 const skills = [
   { icon: <Gamepad2 className="w-8 h-8" />, title: "Game Development", description: "Unity, C#, 3D Modeling" },
-  { icon: <Code className="w-8 h-8" />, title: "Web Technologies", description: "React, Next.js, Node.js" },
+  { icon: <Code className="w-8 h-8" />, title: "Technologies", description: "React, Next.js, Node.js" },
   { icon: <BrainCircuit className="w-8 h-8" />, title: "AI & Machine Learning", description: "Python, TensorFlow, GenAI" },
   { icon: <Paintbrush className="w-8 h-8" />, title: "Design", description: "UI/UX, Figma, Adobe Suite" },
   { icon: <Users className="w-8 h-8" />, title: "Leadership", description: "Project Management, Team Building" },
