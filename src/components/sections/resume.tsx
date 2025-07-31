@@ -44,15 +44,19 @@ export default function Resume() {
           <CarouselContent>
             {skills.concat(skills).map((skill, index) => ( // Duplicate for seamless loop
               <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/6">
-                <div className="p-1">
-                  <Card
-                    className="text-center p-6 flex flex-col items-center justify-center group bg-card transition-all duration-300 cursor-pointer hover:bg-gradient-to-r hover:from-accent hover:to-ring h-40"
+                <div className="p-1 group">
+                   <div
+                    className="rounded-lg bg-transparent group-hover:bg-gradient-to-r group-hover:from-accent group-hover:to-ring p-[2px] transition-all duration-300"
                   >
-                    <div className="text-primary mb-4 transition-transform duration-300 group-hover:scale-110">
-                      {skill.icon}
-                    </div>
-                    <CardTitle className="font-headline text-lg">{skill.title}</CardTitle>
-                  </Card>
+                    <Card
+                      className="text-center p-6 flex flex-col items-center justify-center bg-card transition-all duration-300 cursor-pointer h-40"
+                    >
+                      <div className="text-primary mb-4 transition-transform duration-300 group-hover:scale-110">
+                        {skill.icon}
+                      </div>
+                      <CardTitle className="font-headline text-lg">{skill.title}</CardTitle>
+                    </Card>
+                  </div>
                 </div>
               </CarouselItem>
             ))}
