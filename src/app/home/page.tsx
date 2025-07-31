@@ -6,6 +6,8 @@ import About from "@/components/sections/about";
 import Resume from "@/components/sections/resume";
 import Transition from "@/components/layout/transition";
 import BackgroundBits from "@/components/layout/background-bits";
+import Diary from "@/components/sections/diary";
+import Showreel from "@/components/sections/showreel";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
           </Transition>
           <Resume />
           <About />
+          <Diary />
+          <Showreel />
         </main>
         <Footer />
       </div>
