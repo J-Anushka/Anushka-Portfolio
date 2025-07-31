@@ -45,7 +45,7 @@ const projectEntries = [
   {
     title: "Served as MUN Chairperson",
     description: "Served as the Chairperson for the UNCTAD committee during University’s MUN, where I moderated discussions on global trade, ensured procedural accuracy, and mentored delegates in diplomatic engagement.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxib2FyZCUyMG1lZXRpbmd8ZW58MHx8fHwxNzUzOTgxNDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "conference diplomacy",
   },
   {
