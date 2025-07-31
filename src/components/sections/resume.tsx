@@ -54,7 +54,7 @@ export default function Resume() {
                       <div className="text-primary mb-4 transition-transform duration-300 group-hover:scale-110">
                         {skill.icon}
                       </div>
-                      <CardTitle className="font-headline text-lg">{skill.title}</CardTitle>
+                      <CardTitle className="font-headline text-lg transition-colors group-hover:text-primary">{skill.title}</CardTitle>
                     </Card>
                   </div>
                 </div>
