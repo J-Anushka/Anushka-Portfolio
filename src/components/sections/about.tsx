@@ -37,8 +37,8 @@ const projectEntries = [
     hint: "late night coding",
   },
   {
-    title: "Team Celebration",
-    description: "Celebrating a major milestone with the team that made it all happen. Small wins matter!",
+    title: "Served as Liaison Officer",
+    description: "Represented Chandigarh University as the Liaison Officer during the Corporate Advisory Board Meet, where I coordinated with industry leaders, ensured smooth communication between stakeholders, and facilitated impactful discussions bridging academia and industry.",
     image: "https://placehold.co/600x400.png",
     hint: "team celebration office",
   },
