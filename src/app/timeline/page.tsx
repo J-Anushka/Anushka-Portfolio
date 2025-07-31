@@ -113,18 +113,20 @@ type TimelineItemProps = {
 
 
 const TimelineItem = ({ year, title, description, align }: TimelineItemProps) => {
-  const alignmentClass = align === 'left' ? 'md:self-start md:text-left' : 'md:self-end md:text-right';
-  const textAlignClass = align === 'left' ? 'md:text-left' : 'md:text-right';
-  const lineClass = align === 'left' ? 'md:left-0' : 'md:right-0';
-  const dotClass = align === 'left' ? 'md:left-[-6px]' : 'md:right-[-6px]';
+  const isLeft = align === 'left';
+  const alignmentClass = isLeft ? 'md:self-start md:pr-12' : 'md:self-end md:pl-12';
+  const textAlignClass = isLeft ? 'md:text-left' : 'md:text-right';
   const is2026 = year === "2026";
   
   return (
-    <div className={`relative flex w-full flex-col items-center gap-4 md:w-1/2 ${alignmentClass}`}>
-       <div className={`absolute top-1/2 hidden h-px w-1/2 -translate-y-1/2 bg-primary/50 ${lineClass}`} />
-      <div className={`absolute top-1/2 hidden h-3 w-3 -translate-y-1/2 rounded-full bg-primary ${dotClass}`} />
+    <div className={`relative flex w-full flex-col items-center md:w-1/2 ${alignmentClass}`}>
+      <div className={`absolute top-5 hidden md:block ${isLeft ? 'right-[-2px]' : 'left-[-2px]'}`}>
+        <div className="relative h-4 w-4 rounded-full bg-primary shadow-[0_0_10px_hsl(var(--primary))]">
+          <div className="absolute inset-0 rounded-full bg-primary/30 animate-ping" />
+        </div>
+      </div>
       <h3 className={`font-headline text-5xl font-bold ${is2026 ? 'bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent' : 'text-primary'}`}>{year}</h3>
-      <div className={`w-full rounded-lg bg-secondary p-6 shadow-lg ${textAlignClass}`}>
+      <div className={`w-full rounded-lg bg-secondary p-6 shadow-lg mt-4 text-center ${textAlignClass}`}>
         <h4 className="font-headline text-2xl font-bold">{title}</h4>
         <p className="mt-2 text-muted-foreground">{description}</p>
       </div>
@@ -147,7 +149,7 @@ export default function TimelinePage() {
               </p>
             </div>
             <div className="relative flex flex-col items-center gap-12 px-4 md:px-0">
-               <div className="absolute left-1/2 hidden h-full w-px -translate-x-1/2 bg-primary/50 md:block" />
+               <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-primary to-transparent md:block" />
               {timelineData.map((item, index) => (
                 <TimelineItem key={index} {...item} />
               ))}
