@@ -74,7 +74,7 @@ export default function About() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {projectEntries.map((entry, index) => (
-            <div key={index} className="group rounded-lg p-px bg-transparent hover:bg-gradient-to-r from-accent via-primary to-ring transition-all duration-300">
+            <div key={index} className="group rounded-lg p-px bg-transparent hover:bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 transition-all duration-300">
               <Card className="overflow-hidden h-full">
                 <CardHeader className="p-0">
                   <div className="aspect-video overflow-hidden">
