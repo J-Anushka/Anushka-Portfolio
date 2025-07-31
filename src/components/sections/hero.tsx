@@ -64,9 +64,6 @@ export default function Hero() {
               Call me curious, call me chaotic but I just love trying everything! Life’s my playground, and I’m here to swing, slide, and maybe even invent a few new rides along the way.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-              <Button asChild size="lg" className="font-semibold">
-                <Link href="/home#work">View My Work</Link>
-              </Button>
               <Button asChild size="lg" variant="outline" className="font-semibold">
                 <Link href="/home#contact">Contact Me</Link>
               </Button>
