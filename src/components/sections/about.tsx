@@ -26,8 +26,8 @@ const projectEntries = [
   {
     title: "The First Pitch",
     description: "The story of our very first presentation to investors. Nerves, passion, and a whole lot of coffee.",
-    image: "/anushka-coding.png",
-    hint: "woman coding",
+    image: "https://placehold.co/600x400.png",
+    hint: "investor presentation",
   },
   {
     title: "Late Night Coding Sessions",
