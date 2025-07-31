@@ -66,7 +66,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
                <div className="group rounded-md bg-transparent hover:bg-gradient-to-r from-accent via-primary to-ring p-[2px] transition-all duration-300">
                 <Button asChild size="lg" className="w-full font-semibold border border-primary bg-background text-foreground hover:bg-background/80">
-                  <Link href="/home#contact">Contact Me</Link>
+                  <Link href="/home#contact">Let's Connect</Link>
                 </Button>
               </div>
             </div>
