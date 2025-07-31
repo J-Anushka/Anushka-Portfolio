@@ -6,8 +6,8 @@ import Link from "next/link";
 const timelineData = [
   {
     year: "2026",
-    title: "Future Horizons",
-    description: "Continuing to innovate and explore new frontiers in technology and design. The best is yet to come!",
+    title: "Something’s Brewing",
+    description: "No spoilers yet. Let’s just say: the dots are connecting, and something meaningful is on its way.",
     align: "left",
   },
   {
