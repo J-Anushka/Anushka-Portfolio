@@ -64,9 +64,11 @@ export default function Hero() {
               Call me curious, call me chaotic but I just love trying everything! Life’s my playground, and I’m here to swing, slide, and maybe even invent a few new rides along the way.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-              <Button asChild size="lg" variant="outline" className="font-semibold">
-                <Link href="/home#contact">Contact Me</Link>
-              </Button>
+               <div className="group rounded-md bg-transparent hover:bg-gradient-to-r from-accent via-primary to-ring p-[2px] transition-all duration-300">
+                <Button asChild size="lg" className="w-full font-semibold border border-primary bg-background text-foreground hover:bg-background/80">
+                  <Link href="/home#contact">Contact Me</Link>
+                </Button>
+              </div>
             </div>
         </div>
       </div>
