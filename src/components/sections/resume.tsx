@@ -16,9 +16,6 @@ export default function Resume() {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">My Skillset</h2>
-          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
-            A snapshot of the tools and technologies I'm passionate about.
-          </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {skills.map((skill, index) => (
