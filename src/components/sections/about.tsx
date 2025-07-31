@@ -63,7 +63,7 @@ const projectEntries = [
   {
     title: "Co-Founded Entrepreneurship Club",
     description: "Laid the foundation for Chandigarh University’s official Entrepreneurship Club in 2024, with a vision to cultivate real-world startup ecosystems on campus.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1589561253898-768105ca91a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8c3RhcnR1cHxlbnwwfHx8fDE3NTM5ODI4MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "entrepreneurship campus",
   },
 ];
