@@ -42,6 +42,12 @@ const projectEntries = [
     image: "https://images.unsplash.com/photo-1638262052640-82e94d64664a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoYW5kc2hha2V8ZW58MHx8fHwxNzUzOTgwNDgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "professional handshake",
   },
+  {
+    title: "Served as UNCTAD Committee Chair",
+    description: "Served as the Chairperson for the UNCTAD committee during University’s official MUN, where I moderated discussions on global trade, ensured procedural accuracy, and mentored delegates in diplomatic engagement.",
+    image: "https://placehold.co/600x400.png",
+    hint: "conference diplomacy",
+  },
 ];
 
 export default function About() {
@@ -54,7 +60,7 @@ export default function About() {
              <Typewriter text="I have...." delay={100} />
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 mt-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {projectEntries.map((entry, index) => (
             <Card key={index} className="overflow-hidden group hover:shadow-xl transition-shadow duration-300">
               <CardHeader className="p-0">
