@@ -60,7 +60,7 @@ export default function Hero() {
                 </motion.span>
               ))}
             </motion.h2>
-            <p className="max-w-2xl text-muted-foreground md:text-xl/relaxed">
+            <p className="max-w-2xl text-muted-foreground md:text-xl/relaxed italic">
               Call me curious, call me chaotic but I just love trying everything! Life’s my playground, and I’m here to swing, slide, and maybe even invent a few new rides along the way.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
