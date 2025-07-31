@@ -46,7 +46,7 @@ export default function Resume() {
               <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/6">
                 <div className="p-1">
                   <Card
-                    className="text-center p-6 flex flex-col items-center justify-center group bg-card transition-all duration-300 cursor-pointer hover:bg-ring h-40"
+                    className="text-center p-6 flex flex-col items-center justify-center group bg-card transition-all duration-300 cursor-pointer hover:bg-gradient-to-r hover:from-accent hover:to-ring h-40"
                   >
                     <div className="text-primary mb-4 transition-transform duration-300 group-hover:scale-110">
                       {skill.icon}
