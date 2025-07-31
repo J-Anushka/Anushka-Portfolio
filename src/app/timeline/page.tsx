@@ -19,7 +19,16 @@ const timelineData = [
   {
     year: "2024",
     title: "The Year of Growth",
-    description: "Launched major projects and took on new leadership roles, expanding my skill set in AI and web development.",
+    description: (
+      <>
+        Established the{' '}
+        <span className="font-semibold text-primary">
+          Chandigarh University Entrepreneurship Club
+        </span>{' '}
+        with a mission to ignite entrepreneurial spirit, foster innovation, and
+        empower students to turn bold ideas into real ventures.
+      </>
+    ),
     align: "left",
   },
   {
@@ -78,8 +87,8 @@ const timelineData = [
     description: (
       <>
         Turned the mind-bending concept of{' '}
-        <span className="font-semibold text-ring">Quantum Teleportation</span>{' '}
-        into a 2-minute video for the{' '}
+        <span className="font-semibold text-ring">Quantum Teleportation</span> into a
+        2-minute video for the{' '}
         <span className="font-semibold text-primary">
           Breakthrough Junior Challenge 2021
         </span>
