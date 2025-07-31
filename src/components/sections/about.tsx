@@ -57,7 +57,7 @@ const projectEntries = [
   {
     title: "Hosted Podcasts ",
     description: "Engaged in insightful conversations with startup founders and distinguished university alumni, uncovering their journeys, lessons, and perspectives to inspire the next generation.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1615458318132-1f151a3d18f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwb2RjYXN0c3xlbnwwfHx8fDE3NTM5ODE3MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "podcast interview",
   },
 ];
