@@ -1,14 +1,18 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Paintbrush, Gamepad2, Camera, Music, Plane } from "lucide-react";
+import { BookOpen, Paintbrush, Users, Plane, Lightbulb, ChefHat, Camera, Music, Tv } from "lucide-react";
 
 const hobbies = [
-  { icon: <BookOpen className="w-12 h-12" />, title: "Reading" },
+  { icon: <BookOpen className="w-12 h-12" />, title: "Reading Biographies" },
+  { icon: <Users className="w-12 h-12" />, title: "Connecting with People" },
   { icon: <Paintbrush className="w-12 h-12" />, title: "Art & Painting" },
-  { icon: <Gamepad2 className="w-12 h-12" />, title: "Gaming" },
-  { icon: <Camera className="w-12 h-12" />, title: "Photography" },
-  { icon: <Music className="w-12 h-12" />, title: "Music" },
+  { icon: <Music className="w-12 h-12" />, title: "Dancing" },
   { icon: <Plane className="w-12 h-12" />, title: "Traveling" },
+  { icon: <Lightbulb className="w-12 h-12" />, title: "Exploring Ideas" },
+  { icon: <ChefHat className="w-12 h-12" />, title: "Cooking" },
+  { icon: <Camera className="w-12 h-12" />, title: "Photography" },
+  { icon: <Music className="w-12 h-12" />, title: "Listening to Music" },
+  { icon: <Tv className="w-12 h-12" />, title: "Binge Watching" },
 ];
 
 export default function Hobbies() {
@@ -21,7 +25,7 @@ export default function Hobbies() {
             When I'm not coding or building, you can find me exploring my other passions.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {hobbies.map((hobby, index) => (
             <div key={index} className="group">
               <div className="rounded-lg bg-transparent group-hover:bg-gradient-to-r group-hover:from-accent group-hover:to-ring p-[2px] transition-all duration-300">
