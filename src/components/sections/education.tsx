@@ -1,4 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Book } from "lucide-react";
 
 const educationData = [
@@ -37,13 +38,11 @@ export default function Education() {
                     <CardTitle className="font-headline text-2xl">{edu.institution}</CardTitle>
                     <CardDescription className="text-lg">{edu.degree}</CardDescription>
                      <p className="text-muted-foreground mt-1">{edu.years}</p>
+                     <p className="mt-4">
+                       {edu.description}
+                     </p>
                   </div>
                 </CardHeader>
-                <CardContent className="pl-[76px]">
-                  <p>
-                    {edu.description}
-                  </p>
-                </CardContent>
               </Card>
             ))}
         </div>
