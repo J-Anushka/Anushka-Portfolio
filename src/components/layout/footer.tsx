@@ -7,7 +7,7 @@ import { Github, Linkedin, Mail, Instagram, FileText } from "lucide-react";
 export default function Footer() {
   return (
     <footer id="contact" className="w-full bg-gradient-to-tr from-black via-background to-black">
-      <div className="h-1 bg-gradient-to-r from-black via-blue-900 to-yellow-500 bg-[length:200%_100%] animate-gradient-border" />
+      <div className="h-1 bg-gradient-to-r from-black via-blue-900 to-primary bg-[length:200%_100%] animate-gradient-border" />
       <div className="container mx-auto grid grid-cols-1 gap-12 px-4 py-12 md:grid-cols-2 md:px-6 md:py-24">
         <div className="space-y-4">
           <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">Let's Create Magic</h2>
