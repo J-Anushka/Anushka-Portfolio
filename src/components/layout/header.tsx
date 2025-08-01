@@ -10,7 +10,7 @@ export default function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           <Link href="/timeline" className="hover:text-primary transition-colors">Timeline</Link>
-          <Link href="/home#resume" className="hover:text-primary transition-colors">Resume</Link>
+          <Link href="/home#resume" className="hover:text-primary transition-colors">Skillsets</Link>
           <Link href="/home#about" className="hover:text-primary transition-colors">About</Link>
           <Link href="/home#contact" className="hover:text-primary transition-colors">Contact</Link>
         </nav>
