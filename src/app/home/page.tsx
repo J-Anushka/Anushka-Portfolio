@@ -8,6 +8,7 @@ import Transition from "@/components/layout/transition";
 import BackgroundBits from "@/components/layout/background-bits";
 import Education from "@/components/sections/education";
 import Experience from "@/components/sections/experience";
+import Certifications from "@/components/sections/certifications";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           </Transition>
           <Resume />
           <Experience />
+          <Certifications />
           <About />
           <Education />
         </main>
