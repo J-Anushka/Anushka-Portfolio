@@ -7,7 +7,7 @@ export default function SectionDivider() {
           <div
             className="absolute -top-1/2 left-0 w-full h-[200%] animate-gradient-border bg-[length:400%_400%] bg-gradient-to-r from-primary via-accent to-ring"
             style={{
-              clipPath: 'polygon(0 45%, 100% 55%, 100% 100%, 0% 100%)',
+              clipPath: 'ellipse(100% 60% at 50% 100%)',
             }}
           />
           <div
