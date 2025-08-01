@@ -54,7 +54,7 @@ export default function Education() {
                     <div className="flex-1">
                       <CardTitle className="font-headline text-2xl">{edu.institution}</CardTitle>
                       {edu.address && <p className="text-muted-foreground">{edu.address}</p>}
-                      <CardDescription className="text-lg mt-1 text-primary">{edu.degree}</CardDescription>
+                      <CardDescription className="text-lg mt-1 text-ring">{edu.degree}</CardDescription>
                       <p className="text-muted-foreground mt-1">{edu.years}</p>
                       <div className="mt-4">
                         {edu.description}
