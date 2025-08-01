@@ -4,15 +4,15 @@ import { Briefcase } from "lucide-react";
 
 const experienceData = [
     {
-        role: "Your Role",
-        company: "Company Name",
-        address: "City, Country",
-        years: "Year - Year",
+        role: "Product Developer & Branding Strategist",
+        company: "Innovix Pvt Ltd",
+        address: "Chandigarh, India",
+        years: "Oct 2023 - Present",
         description: (
             <ul className="list-disc list-inside space-y-2 mt-2 text-muted-foreground">
-                <li>Responsibility or accomplishment 1.</li>
-                <li>Responsibility or accomplishment 2.</li>
-                <li>Responsibility or accomplishment 3.</li>
+                <li>Developed and executed branding strategies to enhance market presence.</li>
+                <li>Led product development cycles from concept to launch.</li>
+                <li>Collaborated with cross-functional teams to align product and marketing efforts.</li>
             </ul>
         )
     },
