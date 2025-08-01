@@ -4,7 +4,7 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Gamepad2, BrainCircuit, Mic, Paintbrush, Users, Palette } from "lucide-react";
+import { Code, Gamepad2, BrainCircuit, Mic, Paintbrush, Users, Palette, Camera } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -19,6 +19,7 @@ const skills = [
   { icon: <Palette className="w-8 h-8" />, title: "Visual Art", description: "Sketching, Painting, Digital Art" },
   { icon: <Users className="w-8 h-8" />, title: "Leadership", description: "Project Management, Team Building" },
   { icon: <Mic className="w-8 h-8" />, title: "Communication", description: "Public Speaking, Podcasting" },
+  { icon: <Camera className="w-8 h-8" />, title: "Photography", description: "Capturing moments, telling stories" },
 ];
 
 export default function Resume() {
