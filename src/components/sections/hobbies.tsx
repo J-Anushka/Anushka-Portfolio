@@ -17,7 +17,7 @@ const hobbies = [
 
 export default function Hobbies() {
   return (
-    <section id="hobbies" className="bg-secondary">
+    <section id="hobbies" className="bg-background">
       <div className="container mx-auto py-16 md:py-24 lg:py-32">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">Hobbies & Interests</h2>
