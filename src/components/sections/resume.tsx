@@ -28,8 +28,13 @@ export default function Resume() {
   );
 
   return (
-    <section id="resume" className="bg-secondary">
-      <div className="container mx-auto">
+    <section id="resume" className="bg-secondary relative overflow-hidden">
+       <div className="absolute inset-0 z-0 opacity-20">
+        <div className="absolute top-[10%] left-[5%] h-48 w-48 rounded-full bg-primary/20 blur-3xl animate-blob" />
+        <div className="absolute top-[20%] right-[10%] h-64 w-64 rounded-full bg-accent/20 blur-3xl animate-blob animation-delay-2000" />
+        <div className="absolute bottom-[15%] left-[20%] h-56 w-56 rounded-full bg-ring/20 blur-3xl animate-blob animation-delay-4000" />
+      </div>
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">My Skillset</h2>
         </div>
