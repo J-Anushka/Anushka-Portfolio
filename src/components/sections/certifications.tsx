@@ -1,8 +1,15 @@
 
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Award } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 const certificationsData = [
+    {
+        title: "Product Management",
+        issuer: "IBM",
+        date: "Feb 2025",
+        link: "https://coursera.org/share/ca542b20af3c28666871b2e0bf41c832",
+    },
     {
         title: "Google Cloud Certified",
         issuer: "Google",
@@ -37,6 +44,12 @@ export default function Certifications() {
                       <CardTitle className="font-headline text-2xl">{cert.title}</CardTitle>
                       <CardDescription className="text-lg mt-1 text-ring">{cert.issuer}</CardDescription>
                       <p className="text-muted-foreground mt-1">{cert.date}</p>
+                      {cert.link && (
+                        <Link href={cert.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-primary hover:underline mt-2 font-semibold">
+                          View Credential
+                          <ExternalLink className="w-4 h-4" />
+                        </Link>
+                      )}
                     </div>
                   </CardHeader>
                 </Card>
