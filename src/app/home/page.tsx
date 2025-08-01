@@ -34,6 +34,7 @@ export default function Home() {
           <Hobbies />
           <SectionDivider />
           <Certifications />
+          <SectionDivider />
         </main>
         <Footer />
       </div>
