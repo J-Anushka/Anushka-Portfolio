@@ -8,13 +8,12 @@ const educationData = [
         institution: "Chandigarh University",
         years: "2022 - 2026",
         description: (
-            <ul className="list-disc list-inside space-y-2 mt-2 text-muted-foreground text-justify">
-                <li>Gained conceptual knowledge of Data Structures, Algorithms, OOP, DBMS, and Operating Systems to understand how systems function.</li>
-                <li>Learned programming languages like C, C++, Java, Python, JavaScript, React, focusing more on logic and structure than deep coding.</li>
-                <li>Studied IoT, Digital Electronics, Embedded Systems, and CAD, integrating hardware and software understanding.</li>
-                <li>Explored emerging technologies and tools for building user-focused prototypes using no-code and design platforms.</li>
-                <li>Applied interdisciplinary knowledge from mechanical and electrical domains to create innovative, real-world tech solutions.</li>
-                <li>Strengthened problem-solving, collaboration, and product-thinking through hands-on projects, hackathons, and entrepreneurship initiatives.</li>
+            <ul className="list-disc list-inside space-y-2 mt-2 text-muted-foreground">
+                <li>Core Concepts: Data Structures, Algorithms, OOP, DBMS, OS</li>
+                <li>Programming: C/C++, Java, Python, JavaScript, React</li>
+                <li>Hardware: IoT, Digital Electronics, Embedded Systems</li>
+                <li>Product Development: Prototyping, No-Code, UI/UX</li>
+                <li>Skills: Problem-Solving, Product Thinking, Entrepreneurship</li>
             </ul>
         )
     },
@@ -22,7 +21,13 @@ const educationData = [
         degree: "Intermediate in Science",
         institution: "Arya Mahila Nagarmal Murarka Model School",
         years: "2018 - 2022",
-        description: <p className="text-muted-foreground mt-2 text-justify">Completed my intermediate studies with a specialization in Physics, Chemistry, Maths, and Computer Science, laying the groundwork for my journey into technology and engineering.</p>
+        description: (
+            <ul className="list-disc list-inside space-y-2 mt-2 text-muted-foreground">
+                <li>Core Subjects: Physics, Chemistry, Mathematics</li>
+                <li>Specialization: Computer Science</li>
+                <li>Foundation for Engineering and Technology</li>
+            </ul>
+        )
     }
 ]
 
