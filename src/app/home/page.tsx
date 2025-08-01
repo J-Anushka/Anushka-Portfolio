@@ -9,6 +9,7 @@ import BackgroundBits from "@/components/layout/background-bits";
 import Education from "@/components/sections/education";
 import Experience from "@/components/sections/experience";
 import Certifications from "@/components/sections/certifications";
+import Hobbies from "@/components/sections/hobbies";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
           <Resume />
           <Experience />
           <Education />
+          <Hobbies />
           <Certifications />
         </main>
         <Footer />

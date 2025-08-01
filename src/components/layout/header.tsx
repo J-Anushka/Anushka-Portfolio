@@ -15,6 +15,7 @@ export default function Header() {
           <Link href="/home#certifications" className="hover:text-primary transition-colors">Certifications</Link>
           <Link href="/home#about" className="hover:text-primary transition-colors">I Have</Link>
           <Link href="/home#education" className="hover:text-primary transition-colors">Education</Link>
+          <Link href="/home#hobbies" className="hover:text-primary transition-colors">Hobbies</Link>
           <Link href="/home#contact" className="hover:text-primary transition-colors">Contact</Link>
         </nav>
         <Button asChild>
