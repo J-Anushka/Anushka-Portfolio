@@ -35,11 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${syne.variable} ${quintessential.variable} !scroll-smooth dark`}>
-      <body className="font-sans antialiased bg-background">
-        <div className="relative p-1 bg-gradient-to-r from-black via-blue-900 to-white bg-[length:200%_100%] animate-gradient-border">
-          <div className="bg-background">
-            {children}
-          </div>
+      <body className="font-sans antialiased bg-background p-1 bg-gradient-to-r from-black via-blue-900 to-white bg-[length:200%_100%] animate-gradient-border">
+        <div className="bg-background">
+          {children}
         </div>
         <Toaster />
       </body>
