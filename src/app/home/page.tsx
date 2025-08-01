@@ -4,7 +4,6 @@ import Footer from "@/components/layout/footer";
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
 import Resume from "@/components/sections/resume";
-import Projects from "@/components/sections/projects";
 import Transition from "@/components/layout/transition";
 import BackgroundBits from "@/components/layout/background-bits";
 import Showreel from "@/components/sections/showreel";
@@ -20,7 +19,6 @@ export default function Home() {
             <Hero />
           </Transition>
           <Resume />
-          <Projects />
           <About />
           <Showreel />
         </main>
