@@ -61,13 +61,7 @@ export default function Projects() {
                     <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
                     <CardDescription className="mt-2">{project.description}</CardDescription>
                   </CardContent>
-                  <CardFooter className="p-6 pt-0 flex justify-between items-center">
-                    <Button asChild variant="outline" size="sm">
-                        <Link href={project.link} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="mr-2 h-4 w-4" />
-                            Live Demo
-                        </Link>
-                    </Button>
+                  <CardFooter className="p-6 pt-0 flex justify-end items-center">
                      <Button asChild variant="ghost" size="icon">
                         <Link href={project.github} target="_blank" rel="noopener noreferrer">
                             <Github className="h-5 w-5" />
