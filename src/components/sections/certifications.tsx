@@ -53,7 +53,7 @@ export default function Certifications() {
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">Certifications</h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
-            My credentials and qualifications.
+            Although I've obtained 52 certifications, I'm listing my top favourites here.
           </p>
         </div>
         <div className="max-w-3xl mx-auto grid gap-8">
