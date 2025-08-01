@@ -35,6 +35,12 @@ const certificationsData = [
         link: "https://www.coursera.org/account/accomplishments/certificate/8UX2PRQJDV4C",
     },
     {
+        title: "Code Vipassana",
+        issuer: "Google Cloud",
+        date: "2023",
+        link: "https://www.linkedin.com/posts/anushkajaiswal1_reflecting-on-my-month-long-journey-with-activity-7213520342609186817-lw02?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9yF5sBiwZPChl0LVJX9sj86SYfOuDErFQ"
+    },
+    {
         title: "Google Cloud Certified",
         issuer: "Google",
         date: "2023",
