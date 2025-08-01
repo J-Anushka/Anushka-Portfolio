@@ -29,6 +29,12 @@ const certificationsData = [
         link: "https://www.coursera.org/account/accomplishments/certificate/1I3HFBF95N04",
     },
     {
+        title: "Summer School Artificial Intelligence Technology",
+        issuer: "UUST Russia",
+        date: "May 2024",
+        link: "https://www.linkedin.com/posts/anushkajaiswal1_excited-to-share-my-summer-school-experience-activity-7211745367275581441-q-Cw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9yF5sBiwZPChl0LVJX9sj86SYfOuDErFQ",
+    },
+    {
         title: "Code Vipassana",
         issuer: "Google Cloud",
         date: "2024",
