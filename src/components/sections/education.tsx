@@ -21,7 +21,7 @@ const educationData = [
     {
         degree: "Intermediate in Science",
         institution: "Arya Mahila Nagarmal Murarka Model School",
-        address: "",
+        address: "Varanasi, Uttar Pradesh, India",
         years: "2018 - 2022",
         description: (
             <ul className="list-disc list-inside space-y-2 mt-2 text-muted-foreground">
