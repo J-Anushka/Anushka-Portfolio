@@ -43,9 +43,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="container mx-auto flex items-center justify-between px-4 py-4 text-sm text-muted-foreground md:px-6">
+        <div className="container mx-auto flex items-center justify-center px-4 py-4 text-sm text-muted-foreground md:px-6">
           <p>&copy; 2024 Anushkaverse. All rights reserved.</p>
-          <p>Designed with 💜</p>
         </div>
       </div>
     </footer>
