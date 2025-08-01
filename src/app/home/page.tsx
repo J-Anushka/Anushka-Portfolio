@@ -6,7 +6,6 @@ import About from "@/components/sections/about";
 import Resume from "@/components/sections/resume";
 import Transition from "@/components/layout/transition";
 import BackgroundBits from "@/components/layout/background-bits";
-import Showreel from "@/components/sections/showreel";
 import Education from "@/components/sections/education";
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
           <Resume />
           <About />
           <Education />
-          <Showreel />
         </main>
         <Footer />
       </div>
