@@ -48,7 +48,7 @@ export default function Hero() {
             </div>
       </div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8">
+        <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 border border-foreground/30">
           <div className="flex flex-col gap-4 items-center text-center">
               <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-foreground">
                 Hey! Nice to see you here.
