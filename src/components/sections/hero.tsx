@@ -47,7 +47,7 @@ export default function Hero() {
                 <div className="absolute h-[500px] w-[500px] rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(23,48,122,0.3)_0%,rgba(0,0,0,0)_70%)] animate-zoom-in-out-pulse animation-delay-4000" />
             </div>
       </div>
-      <div className="container mx-auto px-4 md:px-6 relative z-10 flex items-center justify-center">
+      <div className="container mx-auto px-4 md:px-6 relative z-10 flex flex-col items-center justify-center text-center">
         <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 border border-foreground/30">
           <div className="flex flex-col gap-4 items-center text-center">
               <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-foreground">
@@ -72,13 +72,12 @@ export default function Hero() {
               <p className="max-w-2xl text-muted-foreground md:text-xl/relaxed italic">
                 Call me curious, call me chaotic but I just love trying everything! Life’s my playground, and I’m here to swing, slide, and maybe even invent a few new rides along the way.
               </p>
-               <p className="max-w-2xl text-muted-foreground md:text-lg/relaxed italic font-quintessential">
-                Just a quick peek into the chaos and creativity I call life — not the whole ride, just the highlights.
-              </p>
           </div>
         </div>
+        <p className="max-w-2xl text-muted-foreground md:text-lg/relaxed italic font-quintessential mt-6">
+          Just a quick peek into the chaos and creativity I call life — not the whole ride, just the highlights.
+        </p>
       </div>
     </section>
   );
 }
-
