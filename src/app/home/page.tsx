@@ -20,11 +20,11 @@ export default function Home() {
           <Transition>
             <Hero />
           </Transition>
+          <About />
           <Resume />
           <Experience />
-          <Certifications />
-          <About />
           <Education />
+          <Certifications />
         </main>
         <Footer />
       </div>
