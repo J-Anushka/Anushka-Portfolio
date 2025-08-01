@@ -48,36 +48,38 @@ export default function Hero() {
             </div>
       </div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="flex flex-col gap-4 items-center text-center">
-            <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-foreground">
-              Hey! Nice to see you here.
-            </h1>
-            <motion.h2
-              className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter"
-              variants={container}
-              initial="hidden"
-              animate="visible"
-            >
-              {text.map((word, index) => (
-                <motion.span
-                  key={index}
-                  variants={child}
-                  className={word === "Anushka" || word === "Jaiswal!" ? "text-primary inline-block mr-3" : "inline-block mr-3"}
-                >
-                  {word}
-                </motion.span>
-              ))}
-            </motion.h2>
-            <p className="max-w-2xl text-muted-foreground md:text-xl/relaxed italic">
-              Call me curious, call me chaotic but I just love trying everything! Life’s my playground, and I’m here to swing, slide, and maybe even invent a few new rides along the way.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-               <div className="group rounded-md bg-transparent hover:bg-gradient-to-r from-accent via-primary to-ring p-[2px] transition-all duration-300">
-                <Button asChild size="lg" className="w-full font-semibold border border-primary bg-background text-foreground hover:bg-background/80">
-                  <Link href="/home#contact">Let's Connect</Link>
-                </Button>
+        <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8">
+          <div className="flex flex-col gap-4 items-center text-center">
+              <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-foreground">
+                Hey! Nice to see you here.
+              </h1>
+              <motion.h2
+                className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter"
+                variants={container}
+                initial="hidden"
+                animate="visible"
+              >
+                {text.map((word, index) => (
+                  <motion.span
+                    key={index}
+                    variants={child}
+                    className={word === "Anushka" || word === "Jaiswal!" ? "text-primary inline-block mr-3" : "inline-block mr-3"}
+                  >
+                    {word}
+                  </motion.span>
+                ))}
+              </motion.h2>
+              <p className="max-w-2xl text-muted-foreground md:text-xl/relaxed italic">
+                Call me curious, call me chaotic but I just love trying everything! Life’s my playground, and I’m here to swing, slide, and maybe even invent a few new rides along the way.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+                <div className="group rounded-md bg-transparent hover:bg-gradient-to-r from-accent via-primary to-ring p-[2px] transition-all duration-300">
+                  <Button asChild size="lg" className="w-full font-semibold border border-primary bg-background text-foreground hover:bg-background/80">
+                    <Link href="/home#contact">Let's Connect</Link>
+                  </Button>
+                </div>
               </div>
-            </div>
+          </div>
         </div>
       </div>
     </section>
