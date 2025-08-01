@@ -23,6 +23,12 @@ const certificationsData = [
         link: "https://www.coursera.org/account/accomplishments/certificate/O6YAIKX4DYEK",
     },
     {
+        title: "Capstone: Retrieving, Processing, and Visualizing Data with Python",
+        issuer: "University of Michigan",
+        date: "Oct 2024",
+        link: "https://www.coursera.org/account/accomplishments/certificate/1I3HFBF95N04",
+    },
+    {
         title: "Google Cloud Certified",
         issuer: "Google",
         date: "2023",
