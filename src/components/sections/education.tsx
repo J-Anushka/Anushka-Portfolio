@@ -7,7 +7,16 @@ const educationData = [
         degree: "Bachelor of Engineering in Computer Science & Engineering",
         institution: "Chandigarh University",
         years: "2022 - 2026",
-        description: "Currently exploring the depths of computer science, with a keen interest in artificial intelligence, software development, and human-computer interaction. Actively involved in building projects that solve real-world problems."
+        description: (
+            <ul className="list-disc list-inside space-y-2 mt-2 text-muted-foreground">
+                <li>Gained conceptual knowledge of Data Structures, Algorithms, OOP, DBMS, and Operating Systems to understand how systems function.</li>
+                <li>Learned programming languages like C, C++, Java, Python, JavaScript, React, focusing more on logic and structure than deep coding.</li>
+                <li>Studied IoT, Digital Electronics, Embedded Systems, and CAD, integrating hardware and software understanding.</li>
+                <li>Explored emerging technologies and tools for building user-focused prototypes using no-code and design platforms.</li>
+                <li>Applied interdisciplinary knowledge from mechanical and electrical domains to create innovative, real-world tech solutions.</li>
+                <li>Strengthened problem-solving, collaboration, and product-thinking through hands-on projects, hackathons, and entrepreneurship initiatives.</li>
+            </ul>
+        )
     },
     {
         degree: "Intermediate in Science",
@@ -38,9 +47,9 @@ export default function Education() {
                     <CardTitle className="font-headline text-2xl">{edu.institution}</CardTitle>
                     <CardDescription className="text-lg">{edu.degree}</CardDescription>
                      <p className="text-muted-foreground mt-1">{edu.years}</p>
-                     <p className="mt-4">
+                     <div className="mt-4">
                        {edu.description}
-                     </p>
+                     </div>
                   </div>
                 </CardHeader>
               </Card>
