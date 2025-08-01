@@ -8,13 +8,6 @@ const experienceData = [
         company: "Innovix Pvt Ltd",
         address: "Chandigarh, India",
         years: "Oct 2023 - Present",
-        description: (
-            <ul className="list-disc list-inside space-y-2 mt-2 text-muted-foreground">
-                <li>Developed and executed branding strategies to enhance market presence.</li>
-                <li>Led product development cycles from concept to launch.</li>
-                <li>Collaborated with cross-functional teams to align product and marketing efforts.</li>
-            </ul>
-        )
     },
 ]
 
@@ -41,9 +34,6 @@ export default function Experience() {
                       {exp.address && <p className="text-muted-foreground">{exp.address}</p>}
                       <CardDescription className="text-lg mt-1 text-ring">{exp.role}</CardDescription>
                       <p className="text-muted-foreground mt-1">{exp.years}</p>
-                      <div className="mt-4">
-                        {exp.description}
-                      </div>
                     </div>
                   </CardHeader>
                 </Card>
