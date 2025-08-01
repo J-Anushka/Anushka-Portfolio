@@ -15,6 +15,12 @@ const experienceData = [
         address: "Mohali, Punjab, India",
         years: "Jan 2025 - Apr 2025",
     },
+    {
+        role: "Co-founder & Joint Secretary",
+        company: "Chandigarh University Entrepreneurship Club",
+        address: "Mohali, Punjab, India",
+        years: "Jul 2024 - Jan 2025",
+    },
 ]
 
 export default function Experience() {
