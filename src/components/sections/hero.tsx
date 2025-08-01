@@ -72,9 +72,13 @@ export default function Hero() {
               <p className="max-w-2xl text-muted-foreground md:text-xl/relaxed italic">
                 Call me curious, call me chaotic but I just love trying everything! Life’s my playground, and I’m here to swing, slide, and maybe even invent a few new rides along the way.
               </p>
+               <p className="max-w-2xl text-muted-foreground md:text-lg/relaxed italic font-quintessential">
+                Just a quick peek into the chaos and creativity I call life — not the whole ride, just the highlights.
+              </p>
           </div>
         </div>
       </div>
     </section>
   );
 }
+
