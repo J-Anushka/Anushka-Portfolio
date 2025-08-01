@@ -24,10 +24,15 @@ export default function Home() {
           </Transition>
           <SectionDivider />
           <About />
+          <SectionDivider />
           <Resume />
+          <SectionDivider />
           <Experience />
+          <SectionDivider />
           <Education />
+          <SectionDivider />
           <Hobbies />
+          <SectionDivider />
           <Certifications />
         </main>
         <Footer />
