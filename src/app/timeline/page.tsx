@@ -149,7 +149,7 @@ export default function TimelinePage() {
               </p>
             </div>
             <div className="relative flex flex-col items-center gap-12 px-4 md:px-0">
-               <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-primary to-transparent md:block" />
+               <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-primary to-transparent md:block bg-[length:100%_400%] animate-gradient-border" />
               {timelineData.map((item, index) => (
                 <TimelineItem key={index} {...item} />
               ))}
