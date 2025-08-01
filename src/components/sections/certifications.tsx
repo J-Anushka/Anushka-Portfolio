@@ -8,7 +8,7 @@ const certificationsData = [
         title: "Product Management",
         issuer: "IBM",
         date: "Feb 2025",
-        link: "https://coursera.org/share/ca542b20af3c28666871b2e0bf41c832",
+        link: "https://www.coursera.org/account/accomplishments/certificate/7SF1549E4LMY",
     },
     {
         title: "Google Cloud Certified",
