@@ -50,7 +50,7 @@ const certificationsData = [
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="bg-background">
+    <section id="certifications" className="bg-secondary">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">Certifications</h2>
