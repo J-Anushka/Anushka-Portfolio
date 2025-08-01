@@ -58,16 +58,14 @@ export default function Projects() {
                     </div>
                   </CardHeader>
                   <CardContent className="p-6 flex-grow">
-                    <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
+                    <div className="flex justify-between items-center">
+                      <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
+                      <Link href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                          <Github className="h-5 w-5" />
+                      </Link>
+                    </div>
                     <CardDescription className="mt-2">{project.description}</CardDescription>
                   </CardContent>
-                  <CardFooter className="p-6 pt-0 flex justify-end items-center">
-                     <Button asChild variant="ghost" size="icon">
-                        <Link href={project.github} target="_blank" rel="noopener noreferrer">
-                            <Github className="h-5 w-5" />
-                        </Link>
-                    </Button>
-                  </CardFooter>
                 </Card>
             </div>
           ))}
