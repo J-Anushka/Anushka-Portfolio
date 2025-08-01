@@ -29,6 +29,12 @@ const certificationsData = [
         link: "https://www.coursera.org/account/accomplishments/certificate/1I3HFBF95N04",
     },
     {
+        title: "The Science of Well-Being",
+        issuer: "Yale University",
+        date: "Sep 2023",
+        link: "https://www.coursera.org/account/accomplishments/certificate/8UX2PRQJDV4C",
+    },
+    {
         title: "Google Cloud Certified",
         issuer: "Google",
         date: "2023",
