@@ -58,11 +58,11 @@ export default function Resume() {
       id: Date.now() + Math.random(),
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 60 + 20,
+      size: Math.random() * 80 + 40,
       color: `hsla(${Math.random() * 60 + 200}, 100%, 70%, 0.3)`,
     });
 
-    const newBubbles = Array.from({ length: 15 }, createBubble);
+    const newBubbles = Array.from({ length: 8 }, createBubble);
     setBubbles(newBubbles);
   }, []);
 
@@ -73,7 +73,7 @@ export default function Resume() {
           id: Date.now() + Math.random(),
           x: Math.random() * 100,
           y: Math.random() * 100,
-          size: Math.random() * 60 + 20,
+          size: Math.random() * 80 + 40,
           color: `hsla(${Math.random() * 60 + 200}, 100%, 70%, 0.3)`,
        });
        setBubbles(prev => [...prev, createBubble()]);
