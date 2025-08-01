@@ -11,6 +11,12 @@ const certificationsData = [
         link: "https://www.coursera.org/account/accomplishments/certificate/7SF1549E4LMY",
     },
     {
+        title: "Project planning and Machine Learning",
+        issuer: "University of Colorado Boulder",
+        date: "Jan 2025",
+        link: "https://www.coursera.org/account/accomplishments/certificate/O6YAIKX4DYEK",
+    },
+    {
         title: "Google Cloud Certified",
         issuer: "Google",
         date: "2023",
