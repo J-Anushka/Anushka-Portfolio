@@ -12,7 +12,7 @@ const educationData = [
         degree: "Intermediate in Science",
         institution: "Arya Mahila Nagarmal Murarka Model School",
         years: "2018 - 2022",
-        description: "Completed my intermediate studies with a focus on science, laying the groundwork for my journey into technology and engineering."
+        description: "Completed my intermediate studies with a specialization in Physics, Chemistry, Maths, and Computer Science, laying the groundwork for my journey into technology and engineering."
     }
 ]
 
