@@ -6,8 +6,14 @@ const experienceData = [
     {
         role: "Product Developer & Branding Strategist",
         company: "Innovix Pvt Ltd",
-        address: "Chandigarh, India",
+        address: "Mohali, Punjab, India",
         years: "Oct 2023 - Present",
+    },
+    {
+        role: "Secretary",
+        company: "Chandigarh University Entrepreneurship Club",
+        address: "Mohali, Punjab, India",
+        years: "Jan 2025 - Apr 2025",
     },
 ]
 
