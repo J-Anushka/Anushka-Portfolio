@@ -72,7 +72,7 @@ export default function Hero() {
               </p>
           </div>
         </div>
-        <p className="max-w-2xl text-muted-foreground text-2xl md:text-4xl italic font-quintessential mt-24">
+        <p className="text-muted-foreground text-2xl md:text-4xl italic font-quintessential mt-24">
           Just a quick peek into the chaos and creativity I call life — not the whole ride, just the highlights.
         </p>
       </div>
