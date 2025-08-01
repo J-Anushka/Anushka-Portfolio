@@ -7,6 +7,7 @@ import Resume from "@/components/sections/resume";
 import Transition from "@/components/layout/transition";
 import BackgroundBits from "@/components/layout/background-bits";
 import Education from "@/components/sections/education";
+import Experience from "@/components/sections/experience";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
             <Hero />
           </Transition>
           <Resume />
+          <Experience />
           <About />
           <Education />
         </main>
