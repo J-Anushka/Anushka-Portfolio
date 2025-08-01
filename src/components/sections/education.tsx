@@ -35,7 +35,7 @@ const educationData = [
 
 export default function Education() {
   return (
-    <section id="education" className="bg-secondary">
+    <section id="education" className="bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">Education</h2>
