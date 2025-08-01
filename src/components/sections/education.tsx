@@ -8,7 +8,7 @@ const educationData = [
         institution: "Chandigarh University",
         years: "2022 - 2026",
         description: (
-            <ul className="list-disc list-inside space-y-2 mt-2 text-muted-foreground">
+            <ul className="list-disc list-inside space-y-2 mt-2 text-muted-foreground text-justify">
                 <li>Gained conceptual knowledge of Data Structures, Algorithms, OOP, DBMS, and Operating Systems to understand how systems function.</li>
                 <li>Learned programming languages like C, C++, Java, Python, JavaScript, React, focusing more on logic and structure than deep coding.</li>
                 <li>Studied IoT, Digital Electronics, Embedded Systems, and CAD, integrating hardware and software understanding.</li>
@@ -22,7 +22,7 @@ const educationData = [
         degree: "Intermediate in Science",
         institution: "Arya Mahila Nagarmal Murarka Model School",
         years: "2018 - 2022",
-        description: "Completed my intermediate studies with a specialization in Physics, Chemistry, Maths, and Computer Science, laying the groundwork for my journey into technology and engineering."
+        description: <p className="text-muted-foreground mt-2 text-justify">Completed my intermediate studies with a specialization in Physics, Chemistry, Maths, and Computer Science, laying the groundwork for my journey into technology and engineering.</p>
     }
 ]
 
