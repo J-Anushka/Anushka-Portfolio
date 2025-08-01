@@ -6,6 +6,7 @@ const educationData = [
     {
         degree: "Bachelor of Engineering in Computer Science & Engineering",
         institution: "Chandigarh University",
+        address: "Mohali, Punjab, India",
         years: "2022 - 2026",
         description: (
             <ul className="list-disc list-inside space-y-2 mt-2 text-muted-foreground">
@@ -20,6 +21,7 @@ const educationData = [
     {
         degree: "Intermediate in Science",
         institution: "Arya Mahila Nagarmal Murarka Model School",
+        address: "",
         years: "2018 - 2022",
         description: (
             <ul className="list-disc list-inside space-y-2 mt-2 text-muted-foreground">
@@ -51,7 +53,8 @@ export default function Education() {
                     </div>
                     <div className="flex-1">
                       <CardTitle className="font-headline text-2xl">{edu.institution}</CardTitle>
-                      <CardDescription className="text-lg">{edu.degree}</CardDescription>
+                      {edu.address && <p className="text-muted-foreground">{edu.address}</p>}
+                      <CardDescription className="text-lg mt-1">{edu.degree}</CardDescription>
                       <p className="text-muted-foreground mt-1">{edu.years}</p>
                       <div className="mt-4">
                         {edu.description}
