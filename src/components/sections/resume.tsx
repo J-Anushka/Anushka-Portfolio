@@ -29,7 +29,7 @@ export default function Resume() {
   );
 
   return (
-    <section id="resume" className="bg-secondary relative overflow-hidden">
+    <section id="resume" className="bg-background relative overflow-hidden">
       <div className="container mx-auto relative z-10 py-16 md:py-24">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">My Skillset</h2>
