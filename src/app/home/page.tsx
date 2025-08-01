@@ -7,6 +7,7 @@ import Resume from "@/components/sections/resume";
 import Transition from "@/components/layout/transition";
 import BackgroundBits from "@/components/layout/background-bits";
 import Showreel from "@/components/sections/showreel";
+import Education from "@/components/sections/education";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           </Transition>
           <Resume />
           <About />
+          <Education />
           <Showreel />
         </main>
         <Footer />
