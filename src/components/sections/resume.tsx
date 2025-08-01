@@ -10,6 +10,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { motion, AnimatePresence } from "framer-motion";
 
 const skills = [
   { icon: <Gamepad2 className="w-8 h-8" />, title: "Game Development", description: "Unity, C#, 3D Modeling" },
@@ -22,19 +23,73 @@ const skills = [
   { icon: <Camera className="w-8 h-8" />, title: "Photography", description: "Capturing moments, telling stories" },
 ];
 
+const Bubble = ({ id, x, y, size, color, onBurst }: { id: number; x: number; y: number; size: number; color: string; onBurst: (id: number) => void; }) => {
+  return (
+    <motion.div
+      key={id}
+      initial={{ y: '110vh', x: `${x}vw`, opacity: 0, scale: 0.5 }}
+      animate={{ y: '-10vh', opacity: [0, 0.7, 0.7, 0], transition: { duration: Math.random() * 10 + 10, repeat: Infinity, ease: "linear" } }}
+      exit={{ scale: 2, opacity: 0, transition: { duration: 0.3 } }}
+      style={{
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        width: size,
+        height: size,
+        borderRadius: '50%',
+        background: color,
+        boxShadow: `0 0 ${size/2}px ${color}`,
+      }}
+      onClick={() => onBurst(id)}
+      className="cursor-pointer"
+    />
+  )
+}
+
 export default function Resume() {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
+  const [bubbles, setBubbles] = React.useState<any[]>([]);
+
+  React.useEffect(() => {
+    const createBubble = () => ({
+      id: Date.now() + Math.random(),
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      size: Math.random() * 60 + 20,
+      color: `hsla(${Math.random() * 60 + 200}, 100%, 70%, 0.3)`,
+    });
+
+    const newBubbles = Array.from({ length: 15 }, createBubble);
+    setBubbles(newBubbles);
+  }, []);
+
+  const handleBurst = (id: number) => {
+    setBubbles(bubbles => bubbles.filter(b => b.id !== id));
+    setTimeout(() => {
+       const createBubble = () => ({
+          id: Date.now() + Math.random(),
+          x: Math.random() * 100,
+          y: Math.random() * 100,
+          size: Math.random() * 60 + 20,
+          color: `hsla(${Math.random() * 60 + 200}, 100%, 70%, 0.3)`,
+       });
+       setBubbles(prev => [...prev, createBubble()]);
+    }, 500);
+  };
+
   return (
     <section id="resume" className="bg-secondary relative overflow-hidden">
-       <div className="absolute inset-0 z-0 opacity-20">
-        <div className="absolute top-[10%] left-[5%] h-48 w-48 rounded-full bg-primary/20 blur-3xl animate-blob" />
-        <div className="absolute top-[20%] right-[10%] h-64 w-64 rounded-full bg-accent/20 blur-3xl animate-blob animation-delay-2000" />
-        <div className="absolute bottom-[15%] left-[20%] h-56 w-56 rounded-full bg-ring/20 blur-3xl animate-blob animation-delay-4000" />
+       <div className="absolute inset-0 z-0">
+          <AnimatePresence>
+            {bubbles.map(bubble => (
+              <Bubble key={bubble.id} {...bubble} onBurst={handleBurst} />
+            ))}
+          </AnimatePresence>
       </div>
-      <div className="container mx-auto relative z-10">
+      <div className="container mx-auto relative z-10 py-16 md:py-24">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">My Skillset</h2>
         </div>
