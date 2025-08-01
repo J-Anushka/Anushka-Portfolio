@@ -5,6 +5,12 @@ import Link from "next/link";
 
 const certificationsData = [
     {
+        title: "Foundations of Project Management",
+        issuer: "Google",
+        date: "June 2025",
+        link: "https://www.coursera.org/account/accomplishments/certificate/ER89L6TEL08O",
+    },
+    {
         title: "Product Management",
         issuer: "IBM",
         date: "Feb 2025",
