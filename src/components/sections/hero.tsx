@@ -38,8 +38,16 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative w-full h-screen min-h-[700px] flex items-center justify-center bg-background">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="home" className="relative w-full h-screen min-h-[700px] flex items-center justify-center bg-background overflow-hidden">
+        <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 bg-background" />
+            <div className="absolute inset-0 flex items-center justify-center">
+                <div className="absolute h-[300px] w-[300px] rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(23,48,122,0.5)_0%,rgba(0,0,0,0)_70%)] animate-zoom-in-out-pulse animation-delay-0" />
+                <div className="absolute h-[400px] w-[400px] rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(23,48,122,0.4)_0%,rgba(0,0,0,0)_70%)] animate-zoom-in-out-pulse animation-delay-2000" />
+                <div className="absolute h-[500px] w-[500px] rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(23,48,122,0.3)_0%,rgba(0,0,0,0)_70%)] animate-zoom-in-out-pulse animation-delay-4000" />
+            </div>
+      </div>
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col gap-4 items-center text-center">
             <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-foreground">
               Hey! Nice to see you here.
