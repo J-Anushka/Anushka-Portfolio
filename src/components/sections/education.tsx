@@ -43,21 +43,23 @@ export default function Education() {
         </div>
         <div className="max-w-3xl mx-auto grid gap-8">
             {educationData.map((edu, index) => (
-              <Card key={index}>
-                <CardHeader className="flex flex-row items-start gap-4">
-                  <div className="bg-primary/20 p-3 rounded-lg mt-1">
-                    <Book className="w-8 h-8 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <CardTitle className="font-headline text-2xl">{edu.institution}</CardTitle>
-                    <CardDescription className="text-lg">{edu.degree}</CardDescription>
-                     <p className="text-muted-foreground mt-1">{edu.years}</p>
-                     <div className="mt-4">
-                       {edu.description}
-                     </div>
-                  </div>
-                </CardHeader>
-              </Card>
+              <div key={index} className="group rounded-lg p-px bg-transparent hover:bg-primary transition-all duration-300">
+                <Card className="h-full">
+                  <CardHeader className="flex flex-row items-start gap-4">
+                    <div className="bg-primary/20 p-3 rounded-lg mt-1">
+                      <Book className="w-8 h-8 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <CardTitle className="font-headline text-2xl">{edu.institution}</CardTitle>
+                      <CardDescription className="text-lg">{edu.degree}</CardDescription>
+                      <p className="text-muted-foreground mt-1">{edu.years}</p>
+                      <div className="mt-4">
+                        {edu.description}
+                      </div>
+                    </div>
+                  </CardHeader>
+                </Card>
+              </div>
             ))}
         </div>
       </div>
