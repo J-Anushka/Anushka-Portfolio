@@ -46,16 +46,6 @@ const certificationsData = [
         date: "Sep 2023",
         link: "https://www.coursera.org/account/accomplishments/certificate/8UX2PRQJDV4C",
     },
-    {
-        title: "Google Cloud Certified",
-        issuer: "Google",
-        date: "2023",
-    },
-    {
-        title: "AWS Certified Cloud Practitioner",
-        issuer: "Amazon Web Services",
-        date: "2023",
-    },
 ]
 
 export default function Certifications() {
