@@ -10,6 +10,7 @@ import Education from "@/components/sections/education";
 import Experience from "@/components/sections/experience";
 import Certifications from "@/components/sections/certifications";
 import Hobbies from "@/components/sections/hobbies";
+import SectionDivider from "@/components/layout/section-divider";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <Transition>
             <Hero />
           </Transition>
+          <SectionDivider />
           <About />
           <Resume />
           <Experience />
