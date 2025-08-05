@@ -48,31 +48,19 @@ export default function Hero() {
       <div className="container mx-auto px-4 md:px-6 relative z-10 flex flex-col items-center justify-center text-center">
         <div className="relative">
           <div className="absolute -inset-0.5">
-            <svg width="100%" height="100%" fill="none" className="absolute inset-0">
-              <defs>
-                <path id="path" d="M12,2 Hcalc(100% - 12) A10,10 0 0 1 100% 12 Vcalc(100% - 12) A10,10 0 0 1 calc(100% - 12) 100% H12 A10,10 0 0 1 2 calc(100% - 12) V12 A10,10 0 0 1 12 2 Z" />
-              </defs>
+             <svg width="100%" height="100%" fill="none" className="absolute inset-0">
+              <path id="path" d="M12 2H_calc_100%_ - 12_A10 10 0 0 1_100%_12V_calc_100%_ - 12_A10 10 0 0 1_calc_100%_ - 12_100%H12A10 10 0 0 1 2_calc_100%_ - 12_V12A10 10 0 0 1 12 2Z" className="hidden" />
               <rect width="100%" height="100%" rx="12" ry="12" stroke="hsl(var(--foreground) / 0.3)" strokeWidth="2" />
-              <motion.path
-                d="M12,2 Hcalc(100% - 12) A10,10 0 0 1 100% 12 Vcalc(100% - 12) A10,10 0 0 1 calc(100% - 12) 100% H12 A10,10 0 0 1 2 calc(100% - 12) V12 A10,10 0 0 1 12 2 Z"
-                stroke="transparent"
-                strokeWidth="2"
-              >
+              <motion.g>
                 <motion.circle
                   r="4"
                   fill="hsl(var(--foreground))"
+                  animate={{ offsetDistance: ["0%", "100%"] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
                 >
-                  <animateMotion
-                    dur="4s"
-                    repeatCount="indefinite"
-                    keyPoints="0;1"
-                    keyTimes="0;1"
-                    calcMode="linear"
-                  >
-                     <mpath href="#path" />
-                  </animateMotion>
+                  <offsetPath href="#path" />
                 </motion.circle>
-              </motion.path>
+              </motion.g>
             </svg>
           </div>
           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 border border-transparent">
