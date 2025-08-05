@@ -48,25 +48,16 @@ export default function Hero() {
       <div className="container mx-auto px-4 md:px-6 relative z-10 flex flex-col items-center justify-center text-center">
         <div className="relative">
           <div className="absolute -inset-0.5">
-            <motion.div
-              initial={{ pathLength: 0, opacity: 0 }}
-              animate={{ pathLength: 1, opacity: 1 }}
-              transition={{ duration: 2, ease: "easeInOut" }}
-              style={{
-                width: "100%",
-                height: "100%",
-                position: "absolute",
-                borderRadius: "0.75rem",
-              }}
-            >
-              <svg width="100%" height="100%" fill="none" className="absolute inset-0">
-                <rect width="100%" height="100%" rx="12" ry="12" stroke="hsl(var(--foreground) / 0.3)" strokeWidth="2" />
+            <svg width="100%" height="100%" fill="none" className="absolute inset-0">
+              <defs>
+                <path id="path" d="M12,2 Hcalc(100% - 12) A10,10 0 0 1 100% 12 Vcalc(100% - 12) A10,10 0 0 1 calc(100% - 12) 100% H12 A10,10 0 0 1 2 calc(100% - 12) V12 A10,10 0 0 1 12 2 Z" />
+              </defs>
+              <rect width="100%" height="100%" rx="12" ry="12" stroke="hsl(var(--foreground) / 0.3)" strokeWidth="2" />
+              <motion.g>
                 <motion.circle
                   r="4"
                   fill="hsl(var(--primary))"
-                  animate={{
-                    offsetDistance: ["0%", "100%"],
-                  }}
+                  animate={{ offsetDistance: ["0%", "100%"] }}
                   transition={{
                     duration: 8,
                     repeat: Infinity,
@@ -76,11 +67,12 @@ export default function Hero() {
                    <animateMotion
                     dur="8s"
                     repeatCount="indefinite"
-                    path="M12,2 Hcalc(100% - 12) A10,10 0 0 1 100% 12 Vcalc(100% - 12) A10,10 0 0 1 calc(100% - 12) 100% H12 A10,10 0 0 1 2 calc(100% - 12) V12 A10,10 0 0 1 12 2 Z"
-                  />
+                  >
+                    <mpath href="#path" />
+                  </animateMotion>
                 </motion.circle>
-              </svg>
-            </motion.div>
+              </motion.g>
+            </svg>
           </div>
           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 border border-transparent">
             <div className="flex flex-col gap-4 items-center text-center">
