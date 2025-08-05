@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import { Inter, Syne, Quintessential } from 'next/font/google'
+import PageTransition from '@/components/layout/page-transition';
 
 const inter = Inter({ 
   subsets: ['latin'], 
@@ -37,7 +38,9 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${syne.variable} ${quintessential.variable} !scroll-smooth dark`}>
       <body className="font-sans antialiased bg-background p-1 bg-gradient-to-r from-black via-blue-900 to-white bg-[length:200%_100%] animate-gradient-border">
         <div className="bg-background">
-          {children}
+          <PageTransition>
+            {children}
+          </PageTransition>
           <Toaster />
         </div>
       </body>
