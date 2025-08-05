@@ -53,25 +53,26 @@ export default function Hero() {
                 <path id="path" d="M12,2 Hcalc(100% - 12) A10,10 0 0 1 100% 12 Vcalc(100% - 12) A10,10 0 0 1 calc(100% - 12) 100% H12 A10,10 0 0 1 2 calc(100% - 12) V12 A10,10 0 0 1 12 2 Z" />
               </defs>
               <rect width="100%" height="100%" rx="12" ry="12" stroke="hsl(var(--foreground) / 0.3)" strokeWidth="2" />
-              <motion.g>
+              <motion.path
+                d="M12,2 Hcalc(100% - 12) A10,10 0 0 1 100% 12 Vcalc(100% - 12) A10,10 0 0 1 calc(100% - 12) 100% H12 A10,10 0 0 1 2 calc(100% - 12) V12 A10,10 0 0 1 12 2 Z"
+                stroke="transparent"
+                strokeWidth="2"
+              >
                 <motion.circle
                   r="4"
-                  fill="hsl(var(--primary))"
-                  animate={{ offsetDistance: ["0%", "100%"] }}
-                  transition={{
-                    duration: 8,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
+                  fill="hsl(var(--foreground))"
                 >
-                   <animateMotion
-                    dur="8s"
+                  <animateMotion
+                    dur="4s"
                     repeatCount="indefinite"
+                    keyPoints="0;1"
+                    keyTimes="0;1"
+                    calcMode="linear"
                   >
-                    <mpath href="#path" />
+                     <mpath href="#path" />
                   </animateMotion>
                 </motion.circle>
-              </motion.g>
+              </motion.path>
             </svg>
           </div>
           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 border border-transparent">
@@ -101,7 +102,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <p className="w-full text-muted-foreground text-2xl md:text-4xl italic font-quintessential mt-24">
+        <p className="w-full text-foreground text-2xl md:text-4xl italic font-quintessential mt-24">
           Just a quick peek into the chaos and creativity I call life — not the whole ride, just the highlights.
         </p>
       </div>
