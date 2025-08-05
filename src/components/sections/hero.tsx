@@ -47,23 +47,7 @@ export default function Hero() {
       </div>
       <div className="container mx-auto px-4 md:px-6 relative z-10 flex flex-col items-center justify-center text-center">
         <div className="relative">
-          <div className="absolute -inset-0.5">
-             <svg width="100%" height="100%" fill="none" className="absolute inset-0">
-              <path id="path" d="M12 2H_calc_100%_ - 12_A10 10 0 0 1_100%_12V_calc_100%_ - 12_A10 10 0 0 1_calc_100%_ - 12_100%H12A10 10 0 0 1 2_calc_100%_ - 12_V12A10 10 0 0 1 12 2Z" className="hidden" />
-              <rect width="100%" height="100%" rx="12" ry="12" stroke="hsl(var(--foreground) / 0.3)" strokeWidth="2" />
-              <motion.g>
-                <motion.circle
-                  r="4"
-                  fill="hsl(var(--foreground))"
-                  animate={{ offsetDistance: ["0%", "100%"] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-                >
-                  <offsetPath href="#path" />
-                </motion.circle>
-              </motion.g>
-            </svg>
-          </div>
-          <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 border border-transparent">
+          <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 border border-foreground/30">
             <div className="flex flex-col gap-4 items-center text-center">
                 <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-foreground">
                   Hey! Nice to see you here.
