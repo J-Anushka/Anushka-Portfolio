@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm border-b">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="font-headline text-2xl font-bold" prefetch={false}>
+        <Link href="/" className="font-quintessential text-3xl font-bold" prefetch={false}>
           Anushka
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
