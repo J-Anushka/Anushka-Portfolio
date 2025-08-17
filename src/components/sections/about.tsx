@@ -125,9 +125,10 @@ const ProjectCard = ({ entry }: { entry: typeof projectEntries[0] }) => {
         rotateY,
         perspective: 1000
       }}
+      className="h-full"
     >
-      <div className="group rounded-lg p-px bg-transparent hover:bg-primary transition-all duration-300">
-        <Card className="overflow-hidden h-full" style={{ transformStyle: 'preserve-3d' }}>
+      <div className="group rounded-lg p-px bg-transparent hover:bg-primary transition-all duration-300 h-full">
+        <Card className="overflow-hidden h-full flex flex-col" style={{ transformStyle: 'preserve-3d' }}>
           <CardHeader className="p-0">
             <div className="aspect-video overflow-hidden">
               <Image
@@ -141,9 +142,9 @@ const ProjectCard = ({ entry }: { entry: typeof projectEntries[0] }) => {
               />
             </div>
           </CardHeader>
-          <CardContent className="p-6">
+          <CardContent className="p-6 flex flex-col flex-grow">
             <CardTitle className="font-headline text-xl">{entry.title}</CardTitle>
-            <CardDescription className="mt-2">{entry.description}</CardDescription>
+            <CardDescription className="mt-2 flex-grow">{entry.description}</CardDescription>
           </CardContent>
         </Card>
       </div>
