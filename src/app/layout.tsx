@@ -2,7 +2,6 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import { Inter, Syne, Quintessential } from 'next/font/google'
-import SplashCursor from '@/components/layout/splash-cursor';
 
 const inter = Inter({ 
   subsets: ['latin'], 
@@ -37,7 +36,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${syne.variable} ${quintessential.variable} !scroll-smooth dark`}>
       <body className="font-sans antialiased bg-background p-1 bg-gradient-to-r from-black via-blue-900 to-white bg-[length:200%_100%] animate-gradient-border">
-        <SplashCursor />
         <div className="bg-background">
           {children}
           <Toaster />
