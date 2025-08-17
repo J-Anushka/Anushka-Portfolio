@@ -1,8 +1,8 @@
 
 "use client";
 
-import { useState, useEffect } from 'react';
-import { motion } from "framer-motion";
+import { useState, useEffect, useRef } from 'react';
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import Image from "next/image";
 
@@ -74,21 +74,82 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
     },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.5,
+      ease: "easeOut",
     },
   },
 };
+
+
+const ProjectCard = ({ entry }: { entry: typeof projectEntries[0] }) => {
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const rotateX = useTransform(y, [-150, 150], [-10, 10]);
+  const rotateY = useTransform(x, [-150, 150], [10, -10]);
+  
+  const handleMouseMove = (event: React.MouseEvent) => {
+    if (!cardRef.current) return;
+    const { left, top, width, height } = cardRef.current.getBoundingClientRect();
+    x.set(event.clientX - (left + width / 2));
+    y.set(event.clientY - (top + height / 2));
+  };
+  
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
+  return (
+    <motion.div
+      variants={itemVariants}
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        transformStyle: 'preserve-3d',
+        rotateX,
+        rotateY,
+        perspective: 1000
+      }}
+    >
+      <div className="group rounded-lg p-px bg-transparent hover:bg-primary transition-all duration-300">
+        <Card className="overflow-hidden h-full" style={{ transformStyle: 'preserve-3d' }}>
+          <CardHeader className="p-0">
+            <div className="aspect-video overflow-hidden">
+              <Image
+                src={entry.image}
+                alt={entry.title}
+                width={600}
+                height={400}
+                className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+                data-ai-hint={entry.hint}
+                style={{ transform: 'translateZ(20px)' }}
+              />
+            </div>
+          </CardHeader>
+          <CardContent className="p-6">
+            <CardTitle className="font-headline text-xl">{entry.title}</CardTitle>
+            <CardDescription className="mt-2">{entry.description}</CardDescription>
+          </CardContent>
+        </Card>
+      </div>
+    </motion.div>
+  )
+}
 
 export default function About() {
   return (
@@ -105,33 +166,10 @@ export default function About() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           {projectEntries.map((entry, index) => (
-            <motion.div 
-              key={index} 
-              className="group rounded-lg p-px bg-transparent hover:bg-primary transition-all duration-300"
-              variants={itemVariants}
-            >
-              <Card className="overflow-hidden h-full">
-                <CardHeader className="p-0">
-                  <div className="aspect-video overflow-hidden">
-                    <Image
-                      src={entry.image}
-                      alt={entry.title}
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
-                      data-ai-hint={entry.hint}
-                    />
-                  </div>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <CardTitle className="font-headline text-xl">{entry.title}</CardTitle>
-                  <CardDescription className="mt-2">{entry.description}</CardDescription>
-                </CardContent>
-              </Card>
-            </motion.div>
+            <ProjectCard key={index} entry={entry} />
           ))}
         </motion.div>
       </div>
