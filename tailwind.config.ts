@@ -126,6 +126,11 @@ export default {
           "100%": {
             transform: "translate(0px, 0px) scale(1)",
           },
+        },
+        'gradient-flow': {
+          '0%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+          '100%': { 'background-position': '0% 50%' },
         }
       },
       animation: {
@@ -136,6 +141,7 @@ export default {
         'gradient-border': 'gradient-border 4s ease infinite',
         'zoom-in-out-pulse': 'zoom-in-out-pulse 6s infinite ease-out',
         'blob': 'blob 7s infinite',
+        'gradient-flow': 'gradient-flow 15s ease infinite',
       },
     },
   },
