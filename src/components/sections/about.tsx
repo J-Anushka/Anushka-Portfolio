@@ -27,7 +27,7 @@ const Typewriter = ({ text, delay, className }: { text: string; delay: number; c
 const projectEntries = [
   {
     title: "Won My First Hackathon",
-    description: "Participated in the NASA Space Apps Challenge 2023 which was a 35 hours hackathon and my team emerged as National Winners and were selected as Global Nominees.",
+    description: "Participated in the NASA Space Apps Challenge 2023, a 35-hour hackathon, where my team developed a futuristic exploration game set on Saturn’s moon Titan in the year 3023. We emerged as National Winners and were further selected as Global Nominees.",
     image: "https://images.unsplash.com/photo-1737408011230-995d7a7aca1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxM3x8aGFja2F0aG9ufGVufDB8fHx8MTc1Mzk3NzQxMnww&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "hackathon space",
   },
