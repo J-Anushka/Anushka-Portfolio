@@ -6,7 +6,9 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm border-b">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="font-quintessential text-3xl font-bold" prefetch={false}>
-          Anushka
+          <span className="bg-gradient-to-r from-primary via-accent to-ring bg-clip-text text-transparent animate-gradient-border">
+            Anushka
+          </span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-lg font-medium font-serif">
           <Link href="/timeline" className="hover:text-primary transition-colors">Timeline</Link>
