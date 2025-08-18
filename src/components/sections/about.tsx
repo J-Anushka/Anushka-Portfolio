@@ -32,10 +32,10 @@ const projectEntries = [
     hint: "hackathon space",
   },
   {
-    title: "Built My Own Voice Assistant",
-    description: "Created my first live project, a voice assistant named Nexa, who still lives in my laptop and responds like a true sidekick.",
-    image: "https://images.unsplash.com/photo-1605648916319-cf082f7524a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8dm9pY2UlMjBhc3Npc3RhbnR8ZW58MHx8fHwxNzUzOTc3OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    hint: "late night coding",
+    title: "Co-Founded Entrepreneurship Club",
+    description: "Laid the foundation for Chandigarh University’s official Entrepreneurship Club in 2024, driven by a vision to cultivate a thriving startup ecosystem on campus by fostering innovation, collaboration, and hands-on entrepreneurial experiences for students.”",
+    image: "https://images.unsplash.com/photo-1589561253898-768105ca91a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8c3RhcnR1cHxlbnwwfHx8fDE3NTM5ODI4MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    hint: "entrepreneurship campus",
   },
   {
     title: "Served as Liaison Officer",
@@ -50,10 +50,10 @@ const projectEntries = [
     hint: "conference diplomacy",
   },
   {
-    title: "Been an Anchor",
-    description: "Anchored events by setting the tone, engaging the audience, and ensuring the energy stayed high throughout the program.",
-    image: "https://images.unsplash.com/photo-1682258370582-377d685156bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxldmVudCUyMG1pY3xlbnwwfHx8fDE3NTM5ODE2NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    hint: "public speaking event",
+    title: "Built My Own Voice Assistant",
+    description: "Created my first live project, a voice assistant named Nexa, who still lives in my laptop and responds like a true sidekick.",
+    image: "https://images.unsplash.com/photo-1605648916319-cf082f7524a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8dm9pY2UlMjBhc3Npc3RhbnR8ZW58MHx8fHwxNzUzOTc3OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    hint: "late night coding",
   },
   {
     title: "Hosted Podcasts ",
@@ -62,10 +62,10 @@ const projectEntries = [
     hint: "podcast interview",
   },
   {
-    title: "Co-Founded Entrepreneurship Club",
-    description: "Laid the foundation for Chandigarh University’s official Entrepreneurship Club in 2024, driven by a vision to cultivate a thriving startup ecosystem on campus by fostering innovation, collaboration, and hands-on entrepreneurial experiences for students.”",
-    image: "https://images.unsplash.com/photo-1589561253898-768105ca91a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8c3RhcnR1cHxlbnwwfHx8fDE3NTM5ODI4MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    hint: "entrepreneurship campus",
+    title: "Been an Anchor",
+    description: "Anchored events by setting the tone, engaging the audience, and ensuring the energy stayed high throughout the program.",
+    image: "https://images.unsplash.com/photo-1682258370582-377d685156bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxldmVudCUyMG1pY3xlbnwwfHx8fDE3NTM5ODE2NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    hint: "public speaking event",
   },
   {
     title: "Been Class Representative (Freshman Year)",
