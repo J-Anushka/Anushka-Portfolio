@@ -24,8 +24,8 @@ export default function Header() {
         <nav className="hidden md:flex">
            <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <LayoutGrid className="h-6 w-6" />
+              <Button variant="ghost" size="icon" className="hover:bg-blue-900/50">
+                <LayoutGrid className="h-8 w-8" />
                 <span className="sr-only">Open navigation menu</span>
               </Button>
             </DropdownMenuTrigger>
