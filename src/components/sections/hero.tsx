@@ -12,21 +12,12 @@ export default function Hero() {
         <div className="relative">
           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 border border-foreground/30">
             <div className="flex flex-col gap-4 items-center text-center">
-                <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-foreground">
-                  Hey! Nice to see you here.
+                <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-foreground relative inline-block">
+                  <span className="bg-gradient-to-r from-primary via-accent to-ring bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
+                    The text to be displayed with the shiny effect.
+                  </span>
+                  <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
                 </h1>
-                <h2
-                  className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter"
-                >
-                  {text.map((word, index) => (
-                    <span
-                      key={index}
-                      className={word === "Anushka" || word === "Jaiswal!" ? "text-custom-orange inline-block mr-3" : "inline-block mr-3"}
-                    >
-                      {word}
-                    </span>
-                  ))}
-                </h2>
                 <p className="max-w-2xl text-muted-foreground md:text-xl/relaxed italic">
                   Call me curious, call me chaotic but I just love trying everything! Life’s my playground, and I’m here to swing, slide, and maybe even invent a few new rides along the way.
                 </p>

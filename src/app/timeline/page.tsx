@@ -143,7 +143,12 @@ export default function TimelinePage() {
         <section id="timeline" className="py-24 md:py-32">
           <div className="container mx-auto">
             <div className="text-center mb-16">
-              <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">My Journey</h2>
+              <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl relative inline-block">
+                <span className="bg-gradient-to-r from-primary via-accent to-ring bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
+                  The text to be displayed with the shiny effect.
+                </span>
+                <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
+              </h2>
               <p className="mx-auto mt-4 max-w-[700px] text-muted-foreground md:text-xl/relaxed">
                 A look back at the key milestones that have shaped my path.
               </p>
