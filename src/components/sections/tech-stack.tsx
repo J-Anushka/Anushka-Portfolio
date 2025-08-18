@@ -11,7 +11,7 @@ const techStack = [
   { icon: <Bot className="w-12 h-12" />, title: "AI/ML", description: "Generative AI, Genkit, TensorFlow, Scikit-learn" },
   { icon: <Cloud className="w-12 h-12" />, title: "DevOps & Cloud", description: "Git, GitHub, Firebase, Netlify, Google Cloud, Docker" },
   { icon: <PenTool className="w-12 h-12" />, title: "Design", description: "Figma, Canva, Adobe Suite" },
-  { icon: <Gamepad2 className="w-12 h-12" />, title: "Game Development", description: "Unity, C#" },
+  { icon: <Gamepad2 className="w-12 h-12" />, title: "Game Development", description: "Unity, C#, Unreal" },
 ];
 
 export default function TechStack() {
