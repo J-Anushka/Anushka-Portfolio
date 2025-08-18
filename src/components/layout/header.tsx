@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="font-quintessential text-3xl font-bold" prefetch={false}>
           <span className="relative inline-block">
-            <span className="bg-gradient-to-r from-custom-light-brown via-custom-orange to-custom-light-brown bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
+            <span className="bg-gradient-to-r from-blue-900 via-sky-400 to-blue-700 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
               Anushka
             </span>
             <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
