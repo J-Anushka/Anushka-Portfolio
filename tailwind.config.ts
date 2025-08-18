@@ -53,6 +53,7 @@ export default {
         'custom-light-brown': '#A0522D',
         'custom-orange-dark': '#af4c0f',
         'custom-orange-light': '#f2a81d',
+        'custom-deep-blue': '#0d0445',
       },
       borderRadius: {
         lg: 'var(--radius)',
