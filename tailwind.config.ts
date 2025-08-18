@@ -14,6 +14,7 @@ export default {
         headline: ['var(--font-syne)', 'sans-serif'],
         code: ['var(--font-inter)', 'monospace'],
         quintessential: ['var(--font-quintessential)', 'sans-serif'],
+        dancing: ['var(--font-dancing-script)', 'cursive'],
       },
       colors: {
         background: 'hsl(var(--background))',
