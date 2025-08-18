@@ -23,8 +23,11 @@ export default function Header() {
           <Link href="/home#hobbies" className="hover:text-primary transition-colors">Hobbies</Link>
           <Link href="/home#contact" className="hover:text-primary transition-colors">Contact</Link>
         </nav>
-        <Button asChild>
-          <Link href="/home#contact">Get in Touch</Link>
+        <Button asChild className="relative overflow-hidden bg-blue-900 hover:bg-blue-800">
+            <Link href="/home#contact">
+                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
+                Get in Touch
+            </Link>
         </Button>
       </div>
     </header>
