@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
@@ -23,12 +22,6 @@ export default function Header() {
           <Link href="/home#hobbies" className="hover:text-primary transition-colors">Hobbies</Link>
           <Link href="/home#contact" className="hover:text-primary transition-colors">Contact</Link>
         </nav>
-        <Button asChild className="relative overflow-hidden bg-custom-deep-blue hover:bg-blue-900">
-            <Link href="/home#contact">
-                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
-                Get in Touch
-            </Link>
-        </Button>
       </div>
     </header>
   );
