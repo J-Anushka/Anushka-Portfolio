@@ -20,13 +20,13 @@ export default function Footer() {
   return (
     <footer id="contact" className="w-full bg-gradient-to-tr from-black via-background to-black">
       <div className="h-1 bg-gradient-to-r from-black via-blue-900 to-primary bg-[length:200%_100%] animate-gradient-border" />
-      <div className="container mx-auto grid grid-cols-1 gap-12 px-4 py-12 md:grid-cols-2 md:px-6 md:py-24">
-        <div className="space-y-4">
+      <div className="container mx-auto flex justify-center py-12 px-4 md:px-6 md:py-24">
+        <div className="space-y-4 text-center">
             <AnimatedTitle title="Let's Create Magic" />
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
             Brainstorming the future or just exchanging thoughts? My inbox is always open.
           </p>
-          <div className="flex items-center space-x-4 pt-4">
+          <div className="flex items-center justify-center space-x-4 pt-4">
             <Link href="https://docs.google.com/document/d/1BdaSAa4P2n-3hZ_iGssL4-H41ySee2pPYp6K1yq3v2c/edit?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
                 <FileText className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
             </Link>
@@ -43,16 +43,6 @@ export default function Footer() {
                 <Github className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
             </Link>
           </div>
-        </div>
-        <div className="space-y-4">
-          <form action="mailto:anushkajais1001@gmail.com" method="post" encType="text/plain" className="space-y-4">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <Input placeholder="Name" name="name" className="bg-background/50" />
-              <Input type="email" placeholder="Email" name="email" className="bg-background/50" />
-            </div>
-            <Textarea placeholder="Message" name="message" className="min-h-[120px] bg-background/50" />
-            <Button type="submit" className="w-full md:w-auto">Send Message</Button>
-          </form>
         </div>
       </div>
       <div className="border-t border-border">
