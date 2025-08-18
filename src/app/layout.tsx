@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
-import { Inter, Syne, Quintessential, Dancing_Script } from 'next/font/google'
+import { Inter, Syne, Quintessential, Aguafina_Script } from 'next/font/google'
 
 const inter = Inter({ 
   subsets: ['latin'], 
@@ -22,10 +22,11 @@ const quintessential = Quintessential({
   variable: '--font-quintessential',
 });
 
-const dancingScript = Dancing_Script({
+const aguafinaScript = Aguafina_Script({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-dancing-script',
+  weight: '400',
+  variable: '--font-aguafina-script',
 });
 
 
@@ -40,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${syne.variable} ${quintessential.variable} ${dancingScript.variable} !scroll-smooth dark`}>
+    <html lang="en" className={`${inter.variable} ${syne.variable} ${quintessential.variable} ${aguafinaScript.variable} !scroll-smooth dark`}>
       <body className="font-sans antialiased bg-background p-1 bg-gradient-to-r from-black via-blue-900 to-white bg-[length:200%_100%] animate-gradient-border">
         <div className="bg-background">
           {children}

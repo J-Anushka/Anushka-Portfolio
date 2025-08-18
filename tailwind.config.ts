@@ -14,7 +14,7 @@ export default {
         headline: ['var(--font-syne)', 'sans-serif'],
         code: ['var(--font-inter)', 'monospace'],
         quintessential: ['var(--font-quintessential)', 'sans-serif'],
-        dancing: ['var(--font-dancing-script)', 'cursive'],
+        aguafina: ['var(--font-aguafina-script)', 'cursive'],
       },
       colors: {
         background: 'hsl(var(--background))',

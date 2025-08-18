@@ -8,7 +8,7 @@ export default function Header() {
         <Link href="/" className="font-quintessential text-3xl font-bold" prefetch={false}>
           Anushka
         </Link>
-        <nav className="hidden md:flex items-center gap-6 text-lg font-medium font-dancing">
+        <nav className="hidden md:flex items-center gap-6 text-lg font-medium font-aguafina">
           <Link href="/timeline" className="hover:text-primary transition-colors">Timeline</Link>
           <Link href="/home#resume" className="hover:text-primary transition-colors">Skillsets</Link>
           <Link href="/home#experience" className="hover:text-primary transition-colors">Experience</Link>
