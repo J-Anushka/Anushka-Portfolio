@@ -50,7 +50,7 @@ export default {
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         'custom-orange': '#af4c0f',
-        'custom-dark-brown': '#4a2c2a',
+        'custom-light-brown': '#A0522D',
       },
       borderRadius: {
         lg: 'var(--radius)',
