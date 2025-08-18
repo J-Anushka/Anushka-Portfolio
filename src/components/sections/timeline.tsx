@@ -126,7 +126,7 @@ const TimelineItem = ({ year, title, description, align }: TimelineItemProps) =>
       <h3 className={`font-headline text-5xl font-bold ${is2026 ? 'bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent' : 'text-primary'}`}>{year}</h3>
       <div className={`w-full rounded-lg bg-secondary p-6 shadow-lg mt-4 text-center ${textAlignClass}`}>
         <h4 className="font-headline text-2xl font-bold">{title}</h4>
-        <p className="mt-2 text-muted-foreground">{description}</p>
+        <div className="mt-2 text-muted-foreground">{description}</div>
       </div>
     </div>
   );
