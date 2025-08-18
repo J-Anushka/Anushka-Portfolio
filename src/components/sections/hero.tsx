@@ -13,6 +13,7 @@ export default function Hero() {
           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 border border-foreground/30">
             <div className="flex flex-col gap-4 items-center text-center">
                 <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-foreground relative inline-block">
+                  <span className="block text-2xl mb-2">Howdy!</span>
                   <span className="bg-gradient-to-r from-primary via-accent to-ring bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
                     I'm Anushka Jaiswal!
                   </span>
