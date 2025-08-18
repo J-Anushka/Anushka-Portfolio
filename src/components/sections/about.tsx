@@ -82,7 +82,7 @@ const projectEntries = [
   {
     title: "Been Hostel Cluster Representative",
     description: "This role allowed me to take on additional responsibilities beyond the classroom, where I represented my peers, coordinated with management, and helped address student concerns within the hostel community.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHl8ZW58MHx8fHwxNzU1NTQ0MzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "leadership community",
   },
 ];
