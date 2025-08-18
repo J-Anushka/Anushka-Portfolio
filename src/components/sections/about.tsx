@@ -5,24 +5,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, useMotionValue, useTransform, useInView } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import Image from "next/image";
-
-const Typewriter = ({ text, delay, className }: { text: string; delay: number; className?: string }) => {
-  const [currentText, setCurrentText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    if (currentIndex < text.length) {
-      const timeout = setTimeout(() => {
-        setCurrentText(prevText => prevText + text[currentIndex]);
-        setCurrentIndex(prevIndex => prevIndex + 1);
-      }, delay);
-  
-      return () => clearTimeout(timeout);
-    }
-  }, [currentIndex, delay, text]);
-
-  return <span className={className}>{currentText}</span>;
-};
+import Typewriter from '../ui/typewriter';
 
 const projectEntries = [
   {

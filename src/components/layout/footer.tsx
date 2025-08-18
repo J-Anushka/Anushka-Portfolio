@@ -4,12 +4,13 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { Github, Linkedin, Mail, Instagram, FileText } from "lucide-react";
+import Typewriter from "@/components/ui/typewriter";
 
 const AnimatedTitle = ({ title }: { title: string }) => {
     return (
-      <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl relative inline-block">
+      <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl relative inline-block h-16">
         <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
-          {title}
+          <Typewriter text={title} delay={150} />
         </span>
         <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
       </h2>
