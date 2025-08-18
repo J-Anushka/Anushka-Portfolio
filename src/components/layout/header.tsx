@@ -12,20 +12,20 @@ import { LayoutGrid } from "lucide-react";
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
         <Link href="/" className="font-quintessential text-3xl font-bold" prefetch={false}>
           <span className="relative inline-block">
             <span className="bg-gradient-to-r from-custom-deep-blue via-blue-900 via-sky-400 to-blue-700 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
               Anushka
             </span>
-            <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
+            <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{={{ backgroundPosition: '-200% 0' }}}} />
           </span>
         </Link>
         <nav className="hidden md:flex">
            <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon" className="hover:bg-blue-900/50">
-                <LayoutGrid className="h-8 w-8" />
+                <LayoutGrid className="h-16 w-16" />
                 <span className="sr-only">Open navigation menu</span>
               </Button>
             </DropdownMenuTrigger>
