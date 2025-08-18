@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -15,30 +16,30 @@ export default function Footer() {
             Have a project in mind, a question, or just want to say hi? My inbox is always open.
           </p>
           <div className="flex items-center space-x-4 pt-4">
-            <Link href="#" aria-label="Resume">
+            <Link href="https://docs.google.com/document/d/1BdaSAa4P2n-3hZ_iGssL4-H41ySee2pPYp6K1yq3v2c/edit?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
                 <FileText className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
             </Link>
-            <Link href="#" aria-label="LinkedIn">
+            <Link href="https://www.linkedin.com/in/anushkajaiswal1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
             </Link>
-            <Link href="#" aria-label="Mail">
+            <Link href="mailto:anushkajais1001@gmail.com" aria-label="Mail">
                 <Mail className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
             </Link>
-            <Link href="#" aria-label="Instagram">
+            <Link href="https://www.instagram.com/_.anushka_j._/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <Instagram className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
             </Link>
-            <Link href="#" aria-label="GitHub">
+            <Link href="https://github.com/J-Anushka" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
             </Link>
           </div>
         </div>
         <div className="space-y-4">
-          <form className="space-y-4">
+          <form action="mailto:anushkajais1001@gmail.com" method="post" encType="text/plain" className="space-y-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <Input placeholder="Name" className="bg-background/50" />
-              <Input type="email" placeholder="Email" className="bg-background/50" />
+              <Input placeholder="Name" name="name" className="bg-background/50" />
+              <Input type="email" placeholder="Email" name="email" className="bg-background/50" />
             </div>
-            <Textarea placeholder="Message" className="min-h-[120px] bg-background/50" />
+            <Textarea placeholder="Message" name="message" className="min-h-[120px] bg-background/50" />
             <Button type="submit" className="w-full md:w-auto">Send Message</Button>
           </form>
         </div>
