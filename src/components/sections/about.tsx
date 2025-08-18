@@ -63,7 +63,7 @@ const projectEntries = [
   },
   {
     title: "Been an Anchor",
-    description: "Anchored events by setting the tone, engaging the audience, and ensuring the energy stayed high throughout the program.",
+    description: "Anchored events by setting the tone, engaging the audience, and ensuring the energy stayed high throughout the program, while managing transitions, interacting with speakers and participants, and creating a lively, professional atmosphere.",
     image: "https://images.unsplash.com/photo-1682258370582-377d685156bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxldmVudCUyMG1pY3xlbnwwfHx8fDE3NTM5ODE2NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "public speaking event",
   },
