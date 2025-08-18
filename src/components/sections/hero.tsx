@@ -21,7 +21,7 @@ export default function Hero() {
                   {text.map((word, index) => (
                     <span
                       key={index}
-                      className={word === "Anushka" || word === "Jaiswal!" ? "text-cyan-300 inline-block mr-3" : "inline-block mr-3"}
+                      className={word === "Anushka" || word === "Jaiswal!" ? "text-custom-orange inline-block mr-3" : "inline-block mr-3"}
                     >
                       {word}
                     </span>
