@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 border border-foreground/30">
             <div className="flex flex-col gap-4 items-center text-center">
                 <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-foreground relative inline-block">
-                  <span className="block text-2xl mb-2">Howdy!</span>
+                  <span className="block text-2xl mb-2">नमस्ते • Hello • Hola • こんにちは (Konnichiwa)</span>
                   <span className="text-foreground">I'm </span>
                   <span className="bg-gradient-to-r from-custom-deep-blue via-blue-900 via-sky-400 to-blue-700 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
                     Anushka Jaiswal!
