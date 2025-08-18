@@ -32,7 +32,12 @@ export default function Resume() {
     <section id="resume" className="bg-background relative overflow-hidden">
       <div className="container mx-auto relative z-10 py-16 md:py-24">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">My Skillset</h2>
+            <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl relative inline-block">
+                <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
+                My Skillset
+                </span>
+                <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
+            </h2>
         </div>
         <Carousel
           plugins={[plugin.current]}

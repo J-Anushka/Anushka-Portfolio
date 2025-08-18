@@ -20,7 +20,12 @@ export default function Hobbies() {
     <section id="hobbies" className="bg-background">
       <div className="container mx-auto py-16 md:py-24 lg:py-32">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">Hobbies & Interests</h2>
+            <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl relative inline-block">
+                <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
+                Hobbies & Interests
+                </span>
+                <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
+            </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
             When I'm not coding or building, you can find me exploring my other passions.
           </p>

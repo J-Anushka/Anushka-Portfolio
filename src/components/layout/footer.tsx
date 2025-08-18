@@ -11,7 +11,12 @@ export default function Footer() {
       <div className="h-1 bg-gradient-to-r from-black via-blue-900 to-primary bg-[length:200%_100%] animate-gradient-border" />
       <div className="container mx-auto grid grid-cols-1 gap-12 px-4 py-12 md:grid-cols-2 md:px-6 md:py-24">
         <div className="space-y-4">
-          <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">Let's Create Magic</h2>
+            <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl relative inline-block">
+                <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
+                    Let's Create Magic
+                </span>
+                <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
+            </h2>
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
             Have a project in mind, a question, or just want to say hi? My inbox is always open.
           </p>

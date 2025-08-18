@@ -38,7 +38,12 @@ export default function Education() {
     <section id="education" className="bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">Education</h2>
+            <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl relative inline-block">
+                <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
+                Education
+                </span>
+                <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
+            </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
             My academic journey and qualifications.
           </p>
