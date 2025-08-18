@@ -51,6 +51,8 @@ export default {
         ring: 'hsl(var(--ring))',
         'custom-orange': '#af4c0f',
         'custom-light-brown': '#A0522D',
+        'custom-orange-dark': '#af4c0f',
+        'custom-orange-light': '#f2a81d',
       },
       borderRadius: {
         lg: 'var(--radius)',
