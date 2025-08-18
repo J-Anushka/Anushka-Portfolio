@@ -12,7 +12,7 @@ import { LayoutGrid } from "lucide-react";
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
-      <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-28 items-center justify-between px-4 md:px-6">
         <Link href="/" className="font-quintessential text-3xl font-bold" prefetch={false}>
           <span className="relative inline-block">
             <span className="bg-gradient-to-r from-custom-deep-blue via-blue-900 via-sky-400 to-blue-700 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
@@ -25,7 +25,7 @@ export default function Header() {
            <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon" className="hover:bg-blue-900/50">
-                <LayoutGrid className="h-16 w-16" />
+                <LayoutGrid className="h-20 w-20" />
                 <span className="sr-only">Open navigation menu</span>
               </Button>
             </DropdownMenuTrigger>
