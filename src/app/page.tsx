@@ -5,25 +5,38 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import BackgroundLines from '@/components/layout/background-lines';
+import { AnimatePresence, motion } from 'framer-motion';
 
-const Typewriter = ({ text, delay, className }: { text: string; delay: number; className?: string }) => {
-  const [currentText, setCurrentText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
+const words = ["Hey!", "Hola!", "Hello!"];
+
+const TextCarousel = () => {
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    if (currentIndex < text.length) {
-      const timeout = setTimeout(() => {
-        setCurrentText(prevText => prevText + text[currentIndex]);
-        setCurrentIndex(prevIndex => prevIndex + 1);
-      }, delay);
-  
-      return () => clearTimeout(timeout);
-    }
-  }, [currentIndex, delay, text]);
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 2000); // Change word every 2 seconds
 
-  return <span className={className}>{currentText}</span>;
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="relative h-20 w-48 flex items-center justify-center">
+      <AnimatePresence>
+        <motion.span
+          key={words[index]}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.5 }}
+          className="absolute bg-gradient-to-r from-custom-deep-blue via-blue-900 via-sky-400 to-blue-700 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]"
+        >
+          {words[index]}
+        </motion.span>
+      </AnimatePresence>
+    </div>
+  );
 };
-
 
 export default function OpeningPage() {
   const [isFading, setIsFading] = useState(false);
@@ -32,11 +45,11 @@ export default function OpeningPage() {
   useEffect(() => {
     const fadeTimeout = setTimeout(() => {
       setIsFading(true);
-    }, 4000); // Adjusted for typewriter length
+    }, 4000); 
 
     const redirectTimeout = setTimeout(() => {
       router.push('/home');
-    }, 5000); // Adjusted for typewriter length
+    }, 5000);
 
     return () => {
       clearTimeout(fadeTimeout);
@@ -55,9 +68,7 @@ export default function OpeningPage() {
       <div className="relative z-10 flex flex-grow items-center justify-center w-full">
         <div className="font-quintessential text-5xl md:text-7xl font-bold">
             <span className="relative inline-block">
-                <span className="bg-gradient-to-r from-custom-deep-blue via-blue-900 via-sky-400 to-blue-700 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
-                    <Typewriter text="Hey! Hey! Hey!" delay={150} />
-                </span>
+                <TextCarousel />
                 <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
             </span>
         </div>
