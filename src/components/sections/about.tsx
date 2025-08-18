@@ -51,7 +51,7 @@ const projectEntries = [
   },
   {
     title: "Organised Several Events",
-    description: "Successfully organised and managed multiple events at Chandigarh University, from entrepreneurial competitions to interactive club activities. Coordinated logistics, handled outreach, and ensured smooth execution, while adding creative elements to make each event engaging and impactful. These experiences enhanced my skills in planning, leadership, and team collaboration.",
+    description: "Organised and managed several events at Chandigarh University, ranging from entrepreneurial competitions to club activities. Took charge of logistics, outreach, and on-ground execution while adding creative elements to enhance engagement and impact.",
     image: "https://placehold.co/600x400.png",
     hint: "event planning",
   },
