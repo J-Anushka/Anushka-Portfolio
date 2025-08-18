@@ -22,10 +22,10 @@ export default function Footer() {
       <div className="h-1 bg-gradient-to-r from-black via-blue-900 to-primary bg-[length:200%_100%] animate-gradient-border" />
       <div className="container mx-auto flex justify-center py-12 px-4 md:px-6 md:py-24">
         <div className="space-y-4 text-center">
-            <AnimatedTitle title="Let's Create Magic" />
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
             Brainstorming the future or just exchanging thoughts? My inbox is always open.
           </p>
+          <AnimatedTitle title="Let's Create Magic" />
           <div className="flex items-center justify-center space-x-4 pt-4">
             <Link href="https://docs.google.com/document/d/1BdaSAa4P2n-3hZ_iGssL4-H41ySee2pPYp6K1yq3v2c/edit?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
                 <FileText className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
