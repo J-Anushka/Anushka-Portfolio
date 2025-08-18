@@ -1,6 +1,7 @@
 
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Book } from "lucide-react";
+import Transition from "@/components/layout/transition";
 
 const educationData = [
     {
@@ -50,24 +51,26 @@ export default function Education() {
         </div>
         <div className="max-w-3xl mx-auto grid gap-8">
             {educationData.map((edu, index) => (
-              <div key={index} className="group rounded-lg p-px bg-transparent hover:bg-gradient-to-r hover:from-accent hover:to-ring transition-all duration-300">
-                <Card className="h-full bg-card">
-                  <CardHeader className="flex flex-row items-start gap-4">
-                    <div className="bg-primary/20 p-3 rounded-lg mt-1">
-                      <Book className="w-8 h-8 text-primary" />
-                    </div>
-                    <div className="flex-1">
-                      <CardTitle className="font-headline text-2xl">{edu.institution}</CardTitle>
-                      {edu.address && <p className="text-muted-foreground">{edu.address}</p>}
-                      <CardDescription className="text-lg mt-1 text-ring">{edu.degree}</CardDescription>
-                      <p className="text-muted-foreground mt-1">{edu.years}</p>
-                      <div className="mt-4">
-                        {edu.description}
+              <Transition key={index}>
+                <div className="group rounded-lg p-px bg-transparent hover:bg-gradient-to-r hover:from-accent hover:to-ring transition-all duration-300">
+                  <Card className="h-full bg-card">
+                    <CardHeader className="flex flex-row items-start gap-4">
+                      <div className="bg-primary/20 p-3 rounded-lg mt-1">
+                        <Book className="w-8 h-8 text-primary" />
                       </div>
-                    </div>
-                  </CardHeader>
-                </Card>
-              </div>
+                      <div className="flex-1">
+                        <CardTitle className="font-headline text-2xl">{edu.institution}</CardTitle>
+                        {edu.address && <p className="text-muted-foreground">{edu.address}</p>}
+                        <CardDescription className="text-lg mt-1 text-ring">{edu.degree}</CardDescription>
+                        <p className="text-muted-foreground mt-1">{edu.years}</p>
+                        <div className="mt-4">
+                          {edu.description}
+                        </div>
+                      </div>
+                    </CardHeader>
+                  </Card>
+                </div>
+              </Transition>
             ))}
         </div>
       </div>

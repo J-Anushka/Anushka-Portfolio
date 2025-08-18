@@ -165,6 +165,9 @@ const AnimatedTitle = ({ title }: { title: string }) => {
 
 
 export default function About() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
+
   return (
     <section id="about" className="bg-background">
       <div className="container mx-auto">
@@ -175,11 +178,11 @@ export default function About() {
           </p>
         </div>
         <motion.div 
+          ref={ref}
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16"
           variants={containerVariants}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
+          animate={isInView ? "visible" : "hidden"}
         >
           {projectEntries.map((entry, index) => (
             <ProjectCard key={index} entry={entry} />

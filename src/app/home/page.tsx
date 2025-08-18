@@ -7,23 +7,36 @@ import Hero from "@/components/sections/hero";
 import Hobbies from "@/components/sections/hobbies";
 import Resume from "@/components/sections/resume";
 import SectionDivider from "@/components/layout/section-divider";
+import Transition from "@/components/layout/transition";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <SectionDivider />
-      <About />
+      <Transition>
+        <About />
+      </Transition>
       <SectionDivider />
-      <Resume />
+      <Transition>
+        <Resume />
+      </Transition>
       <SectionDivider />
-      <Experience />
+      <Transition>
+        <Experience />
+      </Transition>
       <SectionDivider />
-      <Education />
+      <Transition>
+        <Education />
+      </Transition>
       <SectionDivider />
-      <Hobbies />
+      <Transition>
+        <Hobbies />
+      </Transition>
       <SectionDivider />
-      <Certifications />
+      <Transition>
+        <Certifications />
+      </Transition>
       <SectionDivider />
     </>
   );

@@ -2,6 +2,7 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Award, ExternalLink } from "lucide-react";
 import Link from "next/link";
+import Transition from "@/components/layout/transition";
 
 const certificationsData = [
     {
@@ -65,26 +66,28 @@ export default function Certifications() {
         </div>
         <div className="max-w-3xl mx-auto grid gap-8">
             {certificationsData.map((cert, index) => (
-              <div key={index} className="group rounded-lg p-px bg-transparent hover:bg-gradient-to-r hover:from-accent hover:to-ring transition-all duration-300">
-                <Card className="h-full bg-card">
-                  <CardHeader className="flex flex-row items-start gap-4">
-                    <div className="bg-primary/20 p-3 rounded-lg mt-1">
-                      <Award className="w-8 h-8 text-primary" />
-                    </div>
-                    <div className="flex-1">
-                      <CardTitle className="font-headline text-2xl">{cert.title}</CardTitle>
-                      <CardDescription className="text-lg mt-1 text-ring">{cert.issuer}</CardDescription>
-                      <p className="text-muted-foreground mt-1">{cert.date}</p>
-                      {cert.link && (
-                        <Link href={cert.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-primary hover:underline mt-2 font-semibold">
-                          View Credential
-                          <ExternalLink className="w-4 h-4" />
-                        </Link>
-                      )}
-                    </div>
-                  </CardHeader>
-                </Card>
-              </div>
+              <Transition key={index}>
+                <div className="group rounded-lg p-px bg-transparent hover:bg-gradient-to-r hover:from-accent hover:to-ring transition-all duration-300">
+                  <Card className="h-full bg-card">
+                    <CardHeader className="flex flex-row items-start gap-4">
+                      <div className="bg-primary/20 p-3 rounded-lg mt-1">
+                        <Award className="w-8 h-8 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <CardTitle className="font-headline text-2xl">{cert.title}</CardTitle>
+                        <CardDescription className="text-lg mt-1 text-ring">{cert.issuer}</CardDescription>
+                        <p className="text-muted-foreground mt-1">{cert.date}</p>
+                        {cert.link && (
+                          <Link href={cert.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-primary hover:underline mt-2 font-semibold">
+                            View Credential
+                            <ExternalLink className="w-4 h-4" />
+                          </Link>
+                        )}
+                      </div>
+                    </CardHeader>
+                  </Card>
+                </div>
+              </Transition>
             ))}
         </div>
       </div>

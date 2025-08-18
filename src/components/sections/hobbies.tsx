@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, Paintbrush, Users, Plane, Lightbulb, ChefHat, Camera, Music, Tv } from "lucide-react";
+import Transition from "@/components/layout/transition";
 
 const hobbies = [
   { icon: <BookOpen className="w-12 h-12" />, title: "Reading Biographies" },
@@ -32,16 +33,18 @@ export default function Hobbies() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {hobbies.map((hobby, index) => (
-            <div key={index} className="group">
-              <div className="rounded-lg bg-transparent group-hover:bg-gradient-to-r group-hover:from-accent group-hover:to-ring p-[2px] transition-all duration-300">
-                <Card className="text-center p-6 flex flex-col items-center justify-center bg-card transition-all duration-300 cursor-pointer h-48">
-                  <div className="text-primary mb-4 transition-transform duration-300 group-hover:scale-110">
-                    {hobby.icon}
-                  </div>
-                  <CardTitle className="font-headline text-lg transition-colors group-hover:text-primary">{hobby.title}</CardTitle>
-                </Card>
+            <Transition key={index}>
+              <div className="group">
+                <div className="rounded-lg bg-transparent group-hover:bg-gradient-to-r group-hover:from-accent group-hover:to-ring p-[2px] transition-all duration-300">
+                  <Card className="text-center p-6 flex flex-col items-center justify-center bg-card transition-all duration-300 cursor-pointer h-48">
+                    <div className="text-primary mb-4 transition-transform duration-300 group-hover:scale-110">
+                      {hobby.icon}
+                    </div>
+                    <CardTitle className="font-headline text-lg transition-colors group-hover:text-primary">{hobby.title}</CardTitle>
+                  </Card>
+                </div>
               </div>
-            </div>
+            </Transition>
           ))}
         </div>
       </div>

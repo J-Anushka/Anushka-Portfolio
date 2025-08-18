@@ -1,6 +1,7 @@
 
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Briefcase } from "lucide-react";
+import Transition from "@/components/layout/transition";
 
 const experienceData = [
     {
@@ -40,21 +41,23 @@ export default function Experience() {
         </div>
         <div className="max-w-3xl mx-auto grid gap-8">
             {experienceData.map((exp, index) => (
-              <div key={index} className="group rounded-lg p-px bg-transparent hover:bg-gradient-to-r hover:from-accent hover:to-ring transition-all duration-300">
-                <Card className="h-full bg-card">
-                  <CardHeader className="flex flex-row items-start gap-4">
-                    <div className="bg-primary/20 p-3 rounded-lg mt-1">
-                      <Briefcase className="w-8 h-8 text-primary" />
-                    </div>
-                    <div className="flex-1">
-                      <CardTitle className="font-headline text-2xl">{exp.company}</CardTitle>
-                      {exp.address && <p className="text-muted-foreground">{exp.address}</p>}
-                      <CardDescription className="text-lg mt-1 text-ring">{exp.role}</CardDescription>
-                      <p className="text-muted-foreground mt-1">{exp.years}</p>
-                    </div>
-                  </CardHeader>
-                </Card>
-              </div>
+              <Transition key={index}>
+                <div className="group rounded-lg p-px bg-transparent hover:bg-gradient-to-r hover:from-accent hover:to-ring transition-all duration-300">
+                  <Card className="h-full bg-card">
+                    <CardHeader className="flex flex-row items-start gap-4">
+                      <div className="bg-primary/20 p-3 rounded-lg mt-1">
+                        <Briefcase className="w-8 h-8 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <CardTitle className="font-headline text-2xl">{exp.company}</CardTitle>
+                        {exp.address && <p className="text-muted-foreground">{exp.address}</p>}
+                        <CardDescription className="text-lg mt-1 text-ring">{exp.role}</CardDescription>
+                        <p className="text-muted-foreground mt-1">{exp.years}</p>
+                      </div>
+                    </CardHeader>
+                  </Card>
+                </div>
+              </Transition>
             ))}
         </div>
       </div>
