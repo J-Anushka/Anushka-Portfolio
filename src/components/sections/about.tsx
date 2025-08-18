@@ -155,7 +155,7 @@ const ProjectCard = ({ entry }: { entry: typeof projectEntries[0] }) => {
 const AnimatedTitle = ({ title }: { title: string }) => {
   return (
     <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl relative inline-block">
-      <span className="bg-gradient-to-r from-sky-400 to-white bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
+      <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
         {title}
       </span>
       <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
