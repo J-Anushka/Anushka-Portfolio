@@ -6,8 +6,11 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm border-b">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="font-quintessential text-3xl font-bold" prefetch={false}>
-          <span className="bg-gradient-to-r from-custom-dark-brown via-custom-orange to-custom-dark-brown bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
-            Anushka
+          <span className="relative inline-block">
+            <span className="bg-gradient-to-r from-custom-dark-brown via-custom-orange to-custom-dark-brown bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
+              Anushka
+            </span>
+            <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-lg font-medium font-serif">
