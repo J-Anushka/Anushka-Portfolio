@@ -56,9 +56,13 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <p className="w-full text-foreground text-2xl md:text-4xl italic font-quintessential mt-24">
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 2.5 }}
+          className="w-full text-foreground text-2xl md:text-4xl italic font-quintessential mt-24">
           Just a quick peek into the chaos and creativity I call life — not the whole ride, just the highlights.
-        </p>
+        </motion.p>
       </div>
     </section>
   );
