@@ -6,6 +6,7 @@ import Experience from "@/components/sections/experience";
 import Hero from "@/components/sections/hero";
 import Hobbies from "@/components/sections/hobbies";
 import Resume from "@/components/sections/resume";
+import TechStack from "@/components/sections/tech-stack";
 import Timeline from "@/components/sections/timeline";
 import SectionDivider from "@/components/layout/section-divider";
 import Transition from "@/components/layout/transition";
@@ -33,6 +34,10 @@ export default function Home() {
       <SectionDivider />
       <Transition>
         <Education />
+      </Transition>
+      <SectionDivider />
+      <Transition>
+        <TechStack />
       </Transition>
       <SectionDivider />
       <Transition>
