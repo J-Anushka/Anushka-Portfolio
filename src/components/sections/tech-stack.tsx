@@ -1,17 +1,17 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Bot, Database, Wind, Braces, Component, GitBranch, PenTool, LayoutTemplate, Server } from "lucide-react";
+import { Code, Bot, Database, Wind, Braces, Component, GitBranch, PenTool, LayoutTemplate, Server, Gamepad2, Cloud } from "lucide-react";
 import Transition from "@/components/layout/transition";
 
 const techStack = [
-  { icon: <Code className="w-12 h-12" />, title: "Languages", description: "Python, JavaScript, C++, Java" },
-  { icon: <Component className="w-12 h-12" />, title: "Frontend", description: "React, Next.js, Tailwind CSS" },
-  { icon: <Server className="w-12 h-12" />, title: "Backend", description: "Node.js, Express, Firebase" },
-  { icon: <Database className="w-12 h-12" />, title: "Databases", description: "MongoDB, MySQL, Firestore" },
-  { icon: <Bot className="w-12 h-12" />, title: "AI/ML", description: "Genkit, TensorFlow, Scikit-learn" },
-  { icon: <GitBranch className="w-12 h-12" />, title: "DevOps", description: "Git, Docker, GitHub Actions" },
-  { icon: <PenTool className="w-12 h-12" />, title: "Design", description: "Figma, Adobe XD, Illustrator" },
-  { icon: <LayoutTemplate className="w-12 h-12" />, title: "CMS", description: "WordPress, Webflow" },
+  { icon: <Code className="w-12 h-12" />, title: "Languages", description: "Python, Java, JavaScript, C, C++, C#, SQL, HTML/CSS" },
+  { icon: <Component className="w-12 h-12" />, title: "Frontend", description: "React, Next.js, Vite, Tailwind CSS" },
+  { icon: <Server className="w-12 h-12" />, title: "Backend", description: "Node.js, Express, Firebase, APIs" },
+  { icon: <Database className="w-12 h-12" />, title: "Databases", description: "SQL, MongoDB, MySQL, Firestore" },
+  { icon: <Bot className="w-12 h-12" />, title: "AI/ML", description: "Generative AI, Genkit, TensorFlow, Scikit-learn" },
+  { icon: <Cloud className="w-12 h-12" />, title: "DevOps & Cloud", description: "Git, GitHub, Firebase, Netlify, Google Cloud, Docker" },
+  { icon: <PenTool className="w-12 h-12" />, title: "Design", description: "Figma, Canva, Adobe Suite" },
+  { icon: <Gamepad2 className="w-12 h-12" />, title: "Game Development", description: "Unity, C#" },
 ];
 
 export default function TechStack() {
