@@ -76,7 +76,7 @@ const projectEntries = [
   {
     title: "Been Class Representative (Freshman Year)",
     description: "Being the Class Representative in my freshman year gave me early exposure to leadership and student representation, helping me build communication skills, take responsibility, and actively contribute to my peers’ academic experience.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZW50b3J8ZW58MHx8fHwxNzU1NTQ0MTk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "leadership student",
   },
   {
