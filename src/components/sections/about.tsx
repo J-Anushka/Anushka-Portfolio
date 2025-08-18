@@ -2,7 +2,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion, useMotionValue, useTransform, useInView } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import Image from "next/image";
 
@@ -152,12 +152,30 @@ const ProjectCard = ({ entry }: { entry: typeof projectEntries[0] }) => {
   )
 }
 
+const AnimatedTitle = ({ title }: { title: string }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.5 });
+
+  return (
+    <motion.h2
+      ref={ref}
+      initial={{ filter: "blur(10px)", opacity: 0 }}
+      animate={{ filter: isInView ? "blur(0px)" : "blur(10px)", opacity: isInView ? 1 : 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl"
+    >
+      {title}
+    </motion.h2>
+  );
+};
+
+
 export default function About() {
   return (
     <section id="about" className="bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl">What have I done?</h2>
+          <AnimatedTitle title="What have I done?" />
           <p className="mt-4 text-2xl text-muted-foreground">
              <Typewriter text="I have...." delay={100} />
           </p>
