@@ -153,19 +153,13 @@ const ProjectCard = ({ entry }: { entry: typeof projectEntries[0] }) => {
 }
 
 const AnimatedTitle = ({ title }: { title: string }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.5 });
-
   return (
-    <motion.h2
-      ref={ref}
-      initial={{ filter: "blur(10px)", opacity: 0 }}
-      animate={{ filter: isInView ? "blur(0px)" : "blur(10px)", opacity: isInView ? 1 : 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl"
-    >
-      {title}
-    </motion.h2>
+    <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl relative inline-block">
+      <span className="bg-gradient-to-r from-primary via-accent to-ring bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
+        {title}
+      </span>
+      <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
+    </h2>
   );
 };
 
