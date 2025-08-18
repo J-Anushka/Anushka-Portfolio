@@ -54,7 +54,7 @@ const BackgroundBits = () => {
                 repeatType: "loop",
                 ease: 'easeInOut',
               }}
-              className="absolute text-primary/50"
+              className="absolute text-primary/70"
             >
               {bit.content}
             </motion.span>
@@ -72,7 +72,7 @@ const BackgroundBits = () => {
               ease: 'linear',
             }}
             className={cn(
-              'absolute font-code text-primary/20',
+              'absolute font-code text-primary/40',
               {
                 'text-xs': bit.size < 1.5,
                 'text-sm': bit.size >= 1.5 && bit.size < 2.5,
