@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
+const codeSymbols = ['0', '1', '{}', '=>', '</>', '&&', '||', '()', '[]', ';', ':'];
+
 const BackgroundBits = () => {
   const [bits, setBits] = useState<{ id: number; x: number; y: number; duration: number; delay: number; size: number; content: string; type: 'bit' | 'shimmer' }[]>([]);
 
@@ -12,6 +14,7 @@ const BackgroundBits = () => {
     const generateBits = () => {
       const newBits = Array.from({ length: 70 }).map((_, i) => {
         const type = Math.random() > 0.3 ? 'bit' : 'shimmer';
+        const content = type === 'bit' ? codeSymbols[Math.floor(Math.random() * codeSymbols.length)] : '•';
         return {
           id: i,
           x: Math.random() * 100,
@@ -19,7 +22,7 @@ const BackgroundBits = () => {
           duration: Math.random() * 10 + 10, // 10 to 20 seconds
           delay: Math.random() * 10, // 0 to 10 seconds
           size: Math.random() * 2 + 1, // 1 to 3
-          content: type === 'bit' ? (Math.random() > 0.5 ? '0' : '1') : '•',
+          content: content,
           type: type,
         };
       });
@@ -69,7 +72,7 @@ const BackgroundBits = () => {
               ease: 'linear',
             }}
             className={cn(
-              'absolute text-primary/20',
+              'absolute font-code text-primary/20',
               {
                 'text-xs': bit.size < 1.5,
                 'text-sm': bit.size >= 1.5 && bit.size < 2.5,
