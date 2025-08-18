@@ -6,6 +6,7 @@ import Experience from "@/components/sections/experience";
 import Hero from "@/components/sections/hero";
 import Hobbies from "@/components/sections/hobbies";
 import Resume from "@/components/sections/resume";
+import Timeline from "@/components/sections/timeline";
 import SectionDivider from "@/components/layout/section-divider";
 import Transition from "@/components/layout/transition";
 
@@ -36,6 +37,10 @@ export default function Home() {
       <SectionDivider />
       <Transition>
         <Certifications />
+      </Transition>
+      <SectionDivider />
+      <Transition>
+        <Timeline />
       </Transition>
       <SectionDivider />
     </>
