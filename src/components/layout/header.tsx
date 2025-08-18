@@ -18,7 +18,7 @@ export default function Header() {
             <span className="bg-gradient-to-r from-custom-deep-blue via-blue-900 via-sky-400 to-blue-700 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
               Anushka
             </span>
-            <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{={{ backgroundPosition: '-200% 0' }}}} />
+            <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
           </span>
         </Link>
         <nav className="hidden md:flex">
