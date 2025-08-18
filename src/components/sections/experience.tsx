@@ -35,8 +35,8 @@ export default function Experience() {
         </div>
         <div className="max-w-3xl mx-auto grid gap-8">
             {experienceData.map((exp, index) => (
-              <div key={index} className="group rounded-lg p-px bg-transparent hover:bg-primary transition-all duration-300">
-                <Card className="h-full">
+              <div key={index} className="group rounded-lg p-px bg-transparent hover:bg-gradient-to-r hover:from-accent hover:to-ring transition-all duration-300">
+                <Card className="h-full bg-card">
                   <CardHeader className="flex flex-row items-start gap-4">
                     <div className="bg-primary/20 p-3 rounded-lg mt-1">
                       <Briefcase className="w-8 h-8 text-primary" />
