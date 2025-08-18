@@ -1,9 +1,17 @@
 
 import Link from "next/link";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
+import { LayoutGrid } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm border-b">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="font-quintessential text-3xl font-bold" prefetch={false}>
           <span className="relative inline-block">
@@ -13,15 +21,41 @@ export default function Header() {
             <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
           </span>
         </Link>
-        <nav className="hidden md:flex items-center gap-6 text-lg font-medium font-serif">
-          <Link href="/timeline" className="hover:text-primary transition-colors">Timeline</Link>
-          <Link href="/home#resume" className="hover:text-primary transition-colors">Skillsets</Link>
-          <Link href="/home#experience" className="hover:text-primary transition-colors">Experience</Link>
-          <Link href="/home#certifications" className="hover:text-primary transition-colors">Certifications</Link>
-          <Link href="/home#about" className="hover:text-primary transition-colors">I Have</Link>
-          <Link href="/home#education" className="hover:text-primary transition-colors">Education</Link>
-          <Link href="/home#hobbies" className="hover:text-primary transition-colors">Hobbies</Link>
-          <Link href="/home#contact" className="hover:text-primary transition-colors">Contact</Link>
+        <nav className="hidden md:flex">
+           <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <LayoutGrid className="h-6 w-6" />
+                <span className="sr-only">Open navigation menu</span>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuItem asChild>
+                <Link href="/timeline">Timeline</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/home#resume">Skillsets</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/home#experience">Experience</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/home#certifications">Certifications</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/home#about">I Have</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/home#education">Education</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/home#hobbies">Hobbies</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/home#contact">Contact</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </nav>
       </div>
     </header>
