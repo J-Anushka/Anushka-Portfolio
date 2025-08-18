@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { ArrowDown } from 'lucide-react';
-import BackgroundBits from '@/components/layout/background-bits';
+import BackgroundLines from '@/components/layout/background-lines';
 
 export default function OpeningPage() {
   const [isFading, setIsFading] = useState(false);
@@ -34,7 +34,7 @@ export default function OpeningPage() {
         isFading ? 'opacity-0' : 'opacity-100'
       )}
     >
-      <BackgroundBits />
+      <BackgroundLines />
       <div className="relative z-10 flex flex-grow items-center justify-center">
         <div className="text-center max-w-3xl mx-auto px-4">
           <h1 className="font-quintessential text-4xl md:text-5xl lg:text-6xl text-primary mb-8 animate-fade-in-up">

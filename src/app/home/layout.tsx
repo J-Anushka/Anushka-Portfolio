@@ -2,7 +2,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import BackgroundBits from "@/components/layout/background-bits";
+import BackgroundLines from "@/components/layout/background-lines";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 
@@ -18,7 +18,7 @@ export default function HomeLayout({
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="flex flex-col min-h-screen bg-background text-foreground relative"
     >
-      <BackgroundBits />
+      <BackgroundLines />
       <div className="relative z-10">
         <Header />
         <main className="flex-1">{children}</main>
