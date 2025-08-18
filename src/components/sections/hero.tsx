@@ -4,7 +4,28 @@
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  const text = "I’m Anushka Jaiswal!".split(" ");
+
+  const sentence = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.5,
+        staggerChildren: 0.04,
+      },
+    },
+  };
+
+  const letter = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+
+  const textToAnimate = "Call me curious, call me chaotic but I just love trying everything! Life’s my playground, and I’m here to swing, slide, and maybe even invent a few new rides along the way.";
+
 
   return (
     <section id="home" className="relative w-full h-screen min-h-[700px] flex items-center justify-center bg-transparent overflow-hidden">
@@ -20,9 +41,18 @@ export default function Hero() {
                   </span>
                   <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
                 </h1>
-                <p className="max-w-2xl text-muted-foreground md:text-xl/relaxed italic">
-                  Call me curious, call me chaotic but I just love trying everything! Life’s my playground, and I’m here to swing, slide, and maybe even invent a few new rides along the way.
-                </p>
+                <motion.p 
+                  className="max-w-2xl text-muted-foreground md:text-xl/relaxed italic"
+                  variants={sentence}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  {textToAnimate.split("").map((char, index) => (
+                    <motion.span key={char + "-" + index} variants={letter}>
+                      {char}
+                    </motion.span>
+                  ))}
+                </motion.p>
             </div>
           </div>
         </div>
