@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
-import { Github, Linkedin, Mail, Instagram, FileText } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 import Typewriter from "@/components/ui/typewriter";
 
 const AnimatedTitle = ({ title }: { title: string }) => {
@@ -28,9 +28,6 @@ export default function Footer() {
           </p>
           <AnimatedTitle title="Let's Create Magic" />
           <div className="flex items-center justify-center space-x-4 pt-4">
-            <Link href="https://docs.google.com/document/d/1BdaSAa4P2n-3hZ_iGssL4-H41ySee2pPYp6K1yq3v2c/edit?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
-                <FileText className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
-            </Link>
             <Link href="https://www.linkedin.com/in/anushkajaiswal1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
             </Link>
