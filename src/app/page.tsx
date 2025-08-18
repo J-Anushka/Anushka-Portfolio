@@ -4,9 +4,46 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
-import Link from 'next/link';
-import { ArrowDown } from 'lucide-react';
 import BackgroundLines from '@/components/layout/background-lines';
+import { motion } from 'framer-motion';
+
+const UFO = () => (
+  <motion.div
+    initial={{ x: '-100vw', y: '20vh', rotate: -15 }}
+    animate={{ 
+      x: '100vw', 
+      y: ['20vh', '25vh', '20vh'],
+      rotate: [0, 5, -5, 0],
+    }}
+    transition={{ 
+      x: { duration: 7, ease: 'linear' },
+      y: { duration: 1.5, repeat: Infinity, ease: 'easeInOut' },
+      rotate: { duration: 2, repeat: Infinity, ease: 'easeInOut' },
+    }}
+    className="z-20"
+  >
+    <div className="relative w-48 h-24">
+      {/* UFO Dome */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-12 bg-gray-400/50 backdrop-blur-sm rounded-t-full border-t-2 border-b-2 border-gray-300/70" />
+      {/* UFO Body */}
+      <div className="absolute top-1/2 left-0 w-full h-12 bg-gray-500/80 backdrop-blur-md rounded-full shadow-2xl shadow-cyan-500/50" />
+      {/* UFO Lights */}
+      <div className="absolute top-[60%] left-1/2 -translate-x-1/2 flex gap-4">
+        <div className="w-3 h-3 bg-cyan-400 rounded-full animate-pulse" style={{ animationDelay: '0s' }} />
+        <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
+        <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }} />
+        <div className="w-3 h-3 bg-pink-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }} />
+      </div>
+      {/* Tractor Beam */}
+      <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0
+        border-l-[20px] border-l-transparent
+        border-r-[20px] border-r-transparent
+        border-t-[40px] border-t-cyan-400/30 opacity-70 animate-pulse"
+      />
+    </div>
+  </motion.div>
+);
+
 
 export default function OpeningPage() {
   const [isFading, setIsFading] = useState(false);
@@ -30,28 +67,13 @@ export default function OpeningPage() {
   return (
     <div
       className={cn(
-        'flex h-screen w-full flex-col items-center justify-center bg-background transition-opacity duration-1000 ease-in-out relative',
+        'flex h-screen w-full flex-col items-center justify-center bg-background transition-opacity duration-1000 ease-in-out relative overflow-hidden',
         isFading ? 'opacity-0' : 'opacity-100'
       )}
     >
       <BackgroundLines />
-      <div className="relative z-10 flex flex-grow items-center justify-center">
-        <div className="text-center max-w-3xl mx-auto px-4">
-          <h1 className="font-quintessential text-4xl md:text-5xl lg:text-6xl text-primary mb-8 relative inline-block">
-            <span className="bg-gradient-to-r from-primary via-accent to-ring bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
-              Welcome to Anushkaverse
-            </span>
-            <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
-          </h1>
-          <p className="text-muted-foreground text-lg md:text-xl italic">
-            A Glimpse into the Worlds I Create and Explore.
-          </p>
-        </div>
-      </div>
-      <div className="relative z-10 pb-12">
-        <Link href="/home" aria-label="Go to main content">
-          <ArrowDown className="h-8 w-8 text-foreground/50" />
-        </Link>
+      <div className="relative z-10 flex flex-grow items-center justify-center w-full">
+        <UFO />
       </div>
     </div>
   );
