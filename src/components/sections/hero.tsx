@@ -14,7 +14,7 @@ export default function Hero() {
             <div className="flex flex-col gap-4 items-center text-center">
                 <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-foreground relative inline-block">
                   <span className="bg-gradient-to-r from-primary via-accent to-ring bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
-                    The text to be displayed with the shiny effect.
+                    I'm Anushka Jaiswal!
                   </span>
                   <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
                 </h1>

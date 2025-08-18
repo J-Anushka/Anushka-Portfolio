@@ -39,12 +39,12 @@ export default function OpeningPage() {
         <div className="text-center max-w-3xl mx-auto px-4">
           <h1 className="font-quintessential text-4xl md:text-5xl lg:text-6xl text-primary mb-8 relative inline-block">
             <span className="bg-gradient-to-r from-primary via-accent to-ring bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
-              The text to be displayed with the shiny effect.
+              Welcome to Anushkaverse
             </span>
             <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl italic">
-            This is a subtitle that gives more context to the shiny heading above.
+            A Glimpse into the Worlds I Create and Explore.
           </p>
         </div>
       </div>
