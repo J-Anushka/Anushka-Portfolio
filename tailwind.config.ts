@@ -49,6 +49,7 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+        'cyan-300': '#b4f4ff',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -72,76 +73,10 @@ export default {
             height: '0',
           },
         },
-        'fade-in-up': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateY(20px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)',
-          },
-        },
-        'bounce': {
-          '0%, 100%': {
-            transform: 'translateY(-25%)',
-            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
-          },
-          '50%': {
-            transform: 'translateY(0)',
-            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
-          },
-        },
-        'gradient-border': {
-          '0%, 100%': {
-            'background-position': '0% 50%',
-          },
-          '50%': {
-            'background-position': '100% 50%',
-          },
-        },
-         'zoom-in-out-pulse': {
-          '0%': {
-            transform: 'scale(0.5)',
-            opacity: '0',
-          },
-          '50%': {
-            opacity: '0.3',
-          },
-          '100%': {
-            transform: 'scale(1.5)',
-            opacity: '0',
-          },
-        },
-        'blob': {
-          "0%": {
-            transform: "translate(0px, 0px) scale(1)",
-          },
-          "33%": {
-            transform: "translate(30px, -50px) scale(1.1)",
-          },
-          "66%": {
-            transform: "translate(-20px, 20px) scale(0.9)",
-          },
-          "100%": {
-            transform: "translate(0px, 0px) scale(1)",
-          },
-        },
-        'gradient-flow': {
-          '0%': { 'background-position': '0% 50%' },
-          '50%': { 'background-position': '100% 50%' },
-          '100%': { 'background-position': '0% 50%' },
-        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
-        'bounce': 'bounce 1s infinite',
-        'gradient-border': 'gradient-border 4s ease infinite',
-        'zoom-in-out-pulse': 'zoom-in-out-pulse 6s infinite ease-out',
-        'blob': 'blob 7s infinite',
-        'gradient-flow': 'gradient-flow 15s ease infinite',
       },
     },
   },
