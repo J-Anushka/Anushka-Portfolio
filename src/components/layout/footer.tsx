@@ -5,20 +5,26 @@ import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { Github, Linkedin, Mail, Instagram, FileText } from "lucide-react";
 
+const AnimatedTitle = ({ title }: { title: string }) => {
+    return (
+      <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl relative inline-block">
+        <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
+          {title}
+        </span>
+        <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
+      </h2>
+    );
+  };
+
 export default function Footer() {
   return (
     <footer id="contact" className="w-full bg-gradient-to-tr from-black via-background to-black">
       <div className="h-1 bg-gradient-to-r from-black via-blue-900 to-primary bg-[length:200%_100%] animate-gradient-border" />
       <div className="container mx-auto grid grid-cols-1 gap-12 px-4 py-12 md:grid-cols-2 md:px-6 md:py-24">
         <div className="space-y-4">
-            <h2 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl relative inline-block">
-                <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
-                    Let's Create Magic
-                </span>
-                <span className="absolute -inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent bg-clip-text text-transparent animate-shimmer bg-no-repeat bg-[length:200%_100%]" style={{ backgroundPosition: '-200% 0' }} />
-            </h2>
+            <AnimatedTitle title="Let's Create Magic" />
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-            Have a project in mind, a question, or just want to say hi? My inbox is always open.
+            Brainstorming the future or just exchanging thoughts? My inbox is always open.
           </p>
           <div className="flex items-center space-x-4 pt-4">
             <Link href="https://docs.google.com/document/d/1BdaSAa4P2n-3hZ_iGssL4-H41ySee2pPYp6K1yq3v2c/edit?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
