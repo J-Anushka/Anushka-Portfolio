@@ -24,6 +24,10 @@ export default function Home() {
       </Transition>
       <SectionDivider />
       <Transition>
+        <Timeline />
+      </Transition>
+      <SectionDivider />
+      <Transition>
         <Experience />
       </Transition>
       <SectionDivider />
@@ -37,10 +41,6 @@ export default function Home() {
       <SectionDivider />
       <Transition>
         <Certifications />
-      </Transition>
-      <SectionDivider />
-      <Transition>
-        <Timeline />
       </Transition>
       <SectionDivider />
     </>
