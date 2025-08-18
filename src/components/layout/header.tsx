@@ -6,7 +6,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm border-b">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="font-quintessential text-3xl font-bold" prefetch={false}>
-          <span className="bg-gradient-to-r from-primary via-accent to-ring bg-clip-text text-transparent animate-gradient-border">
+          <span className="bg-gradient-to-r from-custom-dark-brown via-custom-orange to-custom-dark-brown bg-clip-text text-transparent animate-gradient-border bg-[length:200%_auto]">
             Anushka
           </span>
         </Link>
