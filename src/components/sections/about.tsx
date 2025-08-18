@@ -39,7 +39,7 @@ const projectEntries = [
   },
   {
     title: "Served as Liaison Officer",
-    description: "Represented Chandigarh University as the Liaison Officer during the Corporate Advisory Board Meeting.",
+    description: "Represented Chandigarh University as the Liaison Officer during the Corporate Advisory Board Meeting, facilitating communication between industry leaders and the university, coordinating discussions, and ensuring smooth engagement throughout the event.",
     image: "https://images.unsplash.com/photo-1638262052640-82e94d64664a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoYW5kc2hha2V8ZW58MHx8fHwxNzUzOTgwNDgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "professional handshake",
   },
