@@ -26,7 +26,7 @@ const skills = [
 
 export default function Resume() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
 
   return (
@@ -49,10 +49,10 @@ export default function Resume() {
               loop: true,
             }}
             onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.reset}
+            onMouseLeave={plugin.current.play}
           >
             <CarouselContent>
-              {skills.concat(skills).map((skill, index) => ( // Duplicate for seamless loop
+              {skills.map((skill, index) => ( 
                 <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/6">
                   <div className="p-1 h-full">
                     <div className="group rounded-lg p-px bg-transparent hover:bg-gradient-to-r hover:from-accent hover:to-ring transition-all duration-300 h-full">
