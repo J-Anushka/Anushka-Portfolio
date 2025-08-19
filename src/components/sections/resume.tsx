@@ -26,7 +26,7 @@ const skills = [
 
 export default function Resume() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })
+    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: false })
   );
 
   return (
@@ -48,8 +48,6 @@ export default function Resume() {
               align: "start",
               loop: true,
             }}
-            onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.play}
           >
             <CarouselContent>
               {skills.map((skill, index) => ( 
