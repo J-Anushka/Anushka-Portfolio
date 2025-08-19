@@ -21,6 +21,10 @@ export default function Home() {
       </Transition>
       <SectionDivider />
       <Transition>
+        <TechStack />
+      </Transition>
+      <SectionDivider />
+      <Transition>
         <Resume />
       </Transition>
       <SectionDivider />
@@ -34,10 +38,6 @@ export default function Home() {
       <SectionDivider />
       <Transition>
         <Education />
-      </Transition>
-      <SectionDivider />
-      <Transition>
-        <TechStack />
       </Transition>
       <SectionDivider />
       <Transition>
