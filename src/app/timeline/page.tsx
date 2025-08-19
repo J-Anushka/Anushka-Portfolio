@@ -116,7 +116,7 @@ const TimelineItem = ({ year, title, description, align }: TimelineItemProps) =>
   const isLeft = align === 'left';
   const alignmentClass = isLeft ? 'md:self-start md:pr-12' : 'md:self-end md:pl-12';
   const textAlignClass = isLeft ? 'md:text-left' : 'md:text-right';
-  const isHighlighted = year === "2026" || year === "2025";
+  const isHighlighted = year === "2025";
   
   return (
     <div className={`relative flex w-full flex-col items-center md:w-1/2 ${alignmentClass}`}>
