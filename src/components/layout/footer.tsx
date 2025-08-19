@@ -31,7 +31,7 @@ export default function Footer() {
             <Link href="https://www.linkedin.com/in/anushkajaiswal1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
             </Link>
-            <Link href="mailto:anushkajais1001@gmail.com" aria-label="Mail">
+            <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=anushkajais1001@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Mail">
                 <Mail className="h-6 w-6 transition-transform hover:scale-110 hover:text-primary" />
             </Link>
             <Link href="https://www.instagram.com/_.anushka_j._/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
