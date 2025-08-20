@@ -19,6 +19,8 @@ UI Components: ShadCN UI
 Animations: Framer Motion
 To get a local copy up and running, follow these simple steps.
 
+Check the website here 👉https://lnkd.in/gJ4C57bP
+
 src/app/: Contains the core routing and pages of the application, using the Next.js App Router.
 src/components/: Reusable React components used throughout the application, categorized into layout, sections, and ui.
 src/lib/: Utility functions.
@@ -27,6 +29,8 @@ tailwind.config.ts: Configuration file for Tailwind CSS.
 next.config.ts: Configuration file for Next.js.
 
 <img width="1891" height="882" alt="Screenshot 2025-08-19 220321" src="https://github.com/user-attachments/assets/595c053b-4b47-415b-b783-d37749a13ae1" />
+
+<img width="1899" height="903" alt="Screenshot 2025-08-19 220528" src="https://github.com/user-attachments/assets/629c55e8-2f5c-4380-b499-dc6143bfd3a4" />
 
 
 
