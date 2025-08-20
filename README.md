@@ -26,4 +26,7 @@ public/: Static assets like images and fonts.
 tailwind.config.ts: Configuration file for Tailwind CSS.
 next.config.ts: Configuration file for Next.js.
 
+<img width="1891" height="882" alt="Screenshot 2025-08-19 220321" src="https://github.com/user-attachments/assets/595c053b-4b47-415b-b783-d37749a13ae1" />
+
+
 
